@@ -1,0 +1,2872 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina de vendas. vida-alem-da-tela</title>
+<meta name="description" content="Pagina de vendas do produto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+/* Reset minimo pra wrappers nao colidirem com margens do body */
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+[class^="secao-"] { width: 100%; max-width: 100%; }
+
+/* === secao-hero (hero-gerada-vida-alem-da-tela.html) === */
+.secao-hero *, .secao-hero *::before, .secao-hero *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-hero{
+      background-color: #140a20;
+      color: #f4eefb;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-hero .hero{
+      background-color: #140a20;
+      padding: 80px 24px 96px;
+    }.secao-hero .hero__inner{
+      max-width: 760px;
+      margin: 0 auto;
+    }.secao-hero .hero__eyebrow{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 32px;
+    }.secao-hero .hero__eyebrow-line{
+      width: 32px;
+      height: 1px;
+      background-color: #c9a24b;
+      flex-shrink: 0;
+    }.secao-hero .hero__eyebrow-text{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #c9a24b;
+    }.secao-hero .hero__headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #f4eefb;
+      margin-bottom: 28px;
+      letter-spacing: -0.01em;
+    }.secao-hero .hero__divider{
+      width: 48px;
+      height: 2px;
+      background-color: #c9a24b;
+      margin-bottom: 28px;
+      opacity: 0.75;
+    }.secao-hero .hero__subheadline{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      font-weight: 400;
+      line-height: 1.75;
+      color: #b7a6cf;
+      margin-bottom: 44px;
+    }.secao-hero .hero__bullets{
+      list-style: none;
+      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }.secao-hero .hero__bullet{
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.6;
+      color: #f4eefb;
+    }.secao-hero .hero__bullet-marker{
+      flex-shrink: 0;
+      margin-top: 7px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #c9a24b;
+      opacity: 0.85;
+    }.secao-hero .hero__cta-wrap{
+      display: flex;
+      justify-content: center;
+    }.secao-hero .hero__cta{
+      display: inline-block;
+      background-color: #c9a24b;
+      color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 17px 34px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.01em;
+      box-shadow: 0 6px 24px rgba(201, 162, 75, 0.22);
+      transition: background-color 0.25s ease, transform 0.18s ease, box-shadow 0.25s ease;
+    }.secao-hero .hero__cta:hover{
+      background-color: #e4c877;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(201, 162, 75, 0.32);
+    }.secao-hero .hero__cta:active{
+      transform: translateY(0);
+      box-shadow: 0 4px 16px rgba(201, 162, 75, 0.18);
+    }.secao-hero .hero__cta:focus-visible{
+      outline: 3px solid #c9a24b;
+      outline-offset: 3px;
+    }@media (max-width: 600px){
+      .hero {
+        padding: 56px 20px 72px;
+      }.secao-hero .hero__headline{
+        font-size: clamp(1.85rem, 8vw, 2.6rem);
+      }.secao-hero .hero__subheadline{
+        font-size: 1.05rem;
+      }
+    }
+
+/* === secao-dor (dor-gerada-vida-alem-da-tela.html) === */
+.secao-dor *, .secao-dor *::before, .secao-dor *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-dor{
+      background-color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }.secao-dor .dor-section{
+      background-color: #140a20;
+      border-top: 1px solid #3a2a52;
+      padding: 100px 24px;
+    }.secao-dor .dor-container{
+      max-width: 680px;
+      margin: 0 auto;
+    }.secao-dor .dor-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.12;
+      color: #f4eefb;
+      letter-spacing: -0.015em;
+      margin-bottom: 52px;
+    }.secao-dor .dor-body p{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #b7a6cf;
+      margin-bottom: 1.6em;
+    }.secao-dor .dor-body p:last-child{
+      margin-bottom: 0;
+    }.secao-dor .dor-blockquote{
+      border-left: 3px solid #c9a24b;
+      padding: 6px 0 6px 24px;
+      margin: 0 0 1.6em 0;
+    }.secao-dor .dor-blockquote p{
+      font-family: 'Fraunces', Georgia, serif;
+      font-style: italic;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #c9a24b;
+      margin-bottom: 0;
+    }@media (max-width: 768px){
+      .dor-section {
+        padding: 64px 20px;
+      }.secao-dor .dor-headline{
+        font-size: 36px;
+        margin-bottom: 36px;
+      }.secao-dor .dor-body p{
+        font-size: 17px;
+      }.secao-dor .dor-blockquote p{
+        font-size: 18px;
+      }
+    }
+
+/* === secao-paliativo (paliativo-gerada-vida-alem-da-tela.html) === */
+.secao-paliativo *, .secao-paliativo *::before, .secao-paliativo *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-paliativo{
+      background-color: #140a20;
+      color: #f4eefb;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-paliativo .paliativo-section{
+      background-color: #140a20;
+      width: 100%;
+      padding: 80px 24px;
+    }.secao-paliativo .paliativo-inner{
+      max-width: 1100px;
+      margin: 0 auto;
+    }.secao-paliativo .paliativo-header{
+      text-align: center;
+      margin-bottom: 64px;
+    }.secao-paliativo .paliativo-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(1.875rem, 3.8vw, 2.875rem);
+      font-weight: 700;
+      color: #f4eefb;
+      line-height: 1.18;
+      letter-spacing: -0.015em;
+      max-width: 740px;
+      margin: 0 auto;
+    }.secao-paliativo .paliativo-headline .hl-line{
+      display: block;
+    }.secao-paliativo .paliativo-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 36px;
+    }.secao-paliativo .paliativo-card{
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      padding: 36px 32px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.22s ease;
+    }.secao-paliativo .paliativo-card:hover{
+      border-color: #52396e;
+    }.secao-paliativo .paliativo-card-num{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #c9a24b;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }.secao-paliativo .paliativo-card-title{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.1875rem;
+      font-weight: 600;
+      color: #c9a24b;
+      line-height: 1.3;
+      margin-top: 2px;
+    }.secao-paliativo .paliativo-card-rule{
+      width: 28px;
+      height: 1px;
+      background-color: #3a2a52;
+      margin: 6px 0 4px;
+    }.secao-paliativo .paliativo-card-body{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: #b7a6cf;
+      line-height: 1.72;
+    }.secao-paliativo .paliativo-closing{
+      background-color: #2c1a43;
+      border-left: 4px solid #c9a24b;
+      border-radius: 0 14px 14px 0;
+      padding: 36px 44px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+    }.secao-paliativo .paliativo-closing-text{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      color: #f4eefb;
+      line-height: 1.78;
+    }@media (min-width: 700px){
+      .paliativo-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
+    }@media (max-width: 699px){
+      .paliativo-section {
+        padding: 48px 20px;
+      }.secao-paliativo .paliativo-header{
+        margin-bottom: 40px;
+      }.secao-paliativo .paliativo-card{
+        padding: 28px 24px;
+      }.secao-paliativo .paliativo-closing{
+        padding: 28px 24px;
+        border-radius: 0 10px 10px 0;
+      }.secao-paliativo .paliativo-grid{
+        margin-bottom: 24px;
+      }
+    }
+
+/* === secao-prova1 (prova1-gerada-vida-alem-da-tela.html) === */
+.secao-prova1 *, .secao-prova1 *::before, .secao-prova1 *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-prova1{
+      background-color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #f4eefb;
+    }.secao-prova1 .prova-social{
+      background-color: #140a20;
+      padding: 80px 24px;
+    }.secao-prova1 .prova-social__container{
+      max-width: 1100px;
+      margin: 0 auto;
+    }.secao-prova1 .prova-social__separator{
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: #3a2a52;
+      margin: 0 auto 24px auto;
+    }.secao-prova1 .prova-social__headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 600;
+      color: #f4eefb;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 56px;
+      letter-spacing: -0.01em;
+    }.secao-prova1 .prova-social__grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }.secao-prova1 .depoimento-card{
+      display: flex;
+      flex-direction: column;
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      padding: 32px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+    }.secao-prova1 .depoimento-card__aspas{
+      display: block;
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 4rem;
+      line-height: 1;
+      color: #c9a24b;
+      margin-bottom: 16px;
+      user-select: none;
+    }.secao-prova1 .depoimento-card__texto{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #b7a6cf;
+      flex-grow: 1;
+      margin-bottom: 28px;
+    }.secao-prova1 .highlight-num{
+      color: #c9a24b;
+      font-weight: 700;
+    }.secao-prova1 .depoimento-card__footer{
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: auto;
+      padding-top: 24px;
+      border-top: 1px solid #3a2a52;
+    }.secao-prova1 .depoimento-card__avatar{
+      width: 56px;
+      height: 56px;
+      min-width: 56px;
+      border-radius: 50%;
+      background-color: #2c1a43;
+      border: 2px solid #c9a24b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.65rem;
+      color: #b7a6cf;
+      text-align: center;
+    }.secao-prova1 .depoimento-card__info{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }.secao-prova1 .depoimento-card__nome{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #f4eefb;
+      line-height: 1.3;
+    }.secao-prova1 .depoimento-card__cargo{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #b7a6cf;
+      line-height: 1.3;
+    }@media (max-width: 768px){
+      .prova-social {
+        padding: 64px 20px;
+      }.secao-prova1 .prova-social__grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }.secao-prova1 .prova-social__headline{
+        margin-bottom: 40px;
+      }
+    }
+
+/* === secao-cta (cta-gerada-vida-alem-da-tela.html) === */
+.secao-cta *, .secao-cta *::before, .secao-cta *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-cta{
+      background-color: #140a20;
+    }.secao-cta .cta-section{
+      background-color: #2c1a43;
+      padding: 90px 24px;
+      text-align: center;
+    }.secao-cta .cta-inner{
+      max-width: 720px;
+      margin: 0 auto;
+    }.secao-cta .cta-frase{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(22px, 4vw, 38px);
+      font-weight: 600;
+      color: #f4eefb;
+      line-height: 1.38;
+      letter-spacing: -0.01em;
+      margin-bottom: 44px;
+    }.secao-cta .cta-btn{
+      display: inline-block;
+      background-color: #c9a24b;
+      color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 17px 34px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      box-shadow: 0 4px 18px rgba(201, 162, 75, 0.18);
+      transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+    }.secao-cta .cta-btn:hover{
+      background-color: #e4c877;
+      box-shadow: 0 10px 30px rgba(201, 162, 75, 0.30);
+      transform: translateY(-2px);
+    }.secao-cta .cta-btn:focus-visible{
+      outline: 2px solid #e4c877;
+      outline-offset: 4px;
+    }@media (max-width: 600px){
+      .cta-section {
+        padding: 64px 20px;
+      }.secao-cta .cta-btn{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+/* === secao-metodo (metodo-gerada-vida-alem-da-tela.html) === */
+.secao-metodo /* =====================================================
+       SEÇÃO: MÉTODO DA TRAVESSIA (ilha visual isolada)
+       Cores HEX literais. Sem :root. Sem var().
+       Fontes: Fraunces (headings) + Inter (body)
+    ===================================================== */
+
+    *, .secao-metodo *::before, .secao-metodo *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-metodo{
+      background-color: #140a20;
+    }.secao-metodo /* ----- SEÇÃO ----- */
+
+    .sec-metodo{
+      background-color: #140a20;
+      padding: 104px 24px 112px;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-metodo .sec-metodo__inner{
+      max-width: 1100px;
+      margin: 0 auto;
+    }.secao-metodo /* ----- EYEBROW ----- */
+
+    .sec-metodo__eyebrow-row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 22px;
+    }.secao-metodo .sec-metodo__eyebrow-dash{
+      width: 44px;
+      height: 1px;
+      background-color: #c9a24b;
+      opacity: 0.45;
+      flex-shrink: 0;
+    }.secao-metodo .sec-metodo__eyebrow{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #c9a24b;
+      white-space: nowrap;
+    }.secao-metodo /* ----- HEADLINE ----- */
+
+    .sec-metodo__headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(28px, 4.2vw, 50px);
+      font-weight: 700;
+      line-height: 1.13;
+      color: #f4eefb;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }.secao-metodo /* ----- INTRO ----- */
+
+    .sec-metodo__intro{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: clamp(15px, 1.55vw, 17px);
+      font-weight: 400;
+      line-height: 1.8;
+      color: #b7a6cf;
+      text-align: center;
+      max-width: 660px;
+      margin: 0 auto 76px;
+    }.secao-metodo /* ----- TRILHA HORIZONTAL (desktop) ----- */
+
+    .sec-metodo__trilha{
+      display: flex;
+      align-items: flex-start;
+    }.secao-metodo /* Cada coluna: nó + card empilhados */
+    .sec-metodo__estacao{
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }.secao-metodo /* Nó circular conector */
+    .sec-metodo__no{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #140a20;
+      border: 2px solid #c9a24b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 0 7px rgba(201, 162, 75, 0.07);
+    }.secao-metodo .sec-metodo__no::after{
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #c9a24b;
+    }.secao-metodo /* Segmento de linha tracejada dourada entre nós */
+    .sec-metodo__seg{
+      flex: 0 0 30px;
+      align-self: flex-start;
+      height: 2px;
+      /* alinha ao centro do nó: (30px / 2) - (2px / 2) = 14px */
+      margin-top: 14px;
+      background-image: repeating-linear-gradient(
+        90deg,
+        #c9a24b 0px,
+        #c9a24b 7px,
+        transparent 7px,
+        transparent 17px
+      );
+      opacity: 0.4;
+      pointer-events: none;
+    }.secao-metodo /* ----- CARD ----- */
+
+    .sec-metodo__card{
+      width: 100%;
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      padding: 30px 26px 34px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }.secao-metodo .sec-metodo__card:hover{
+      border-color: rgba(201, 162, 75, 0.28);
+      transform: translateY(-4px);
+      box-shadow: 0 22px 52px rgba(0, 0, 0, 0.52);
+    }.secao-metodo /* Watermark numérico (absoluto, .secao-metodo atrás do conteúdo) */
+    .sec-metodo__card-num{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+      color: #c9a24b;
+      opacity: 0.11;
+      position: absolute;
+      top: -6px;
+      right: 14px;
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.05em;
+      z-index: 0;
+    }.secao-metodo /* Conteúdo acima do watermark */
+    .sec-metodo__card-wrap{
+      position: relative;
+      z-index: 1;
+    }.secao-metodo /* Label bíblica da estação */
+    .sec-metodo__card-estacao{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #c9a24b;
+      margin-bottom: 10px;
+    }.secao-metodo /* Nome da fase */
+    .sec-metodo__card-fase{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.28;
+      color: #f4eefb;
+      margin-bottom: 15px;
+    }.secao-metodo /* Badge dos dias */
+    .sec-metodo__card-dias{
+      display: inline-block;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #140a20;
+      background-color: #c9a24b;
+      border-radius: 5px;
+      padding: 4px 12px;
+      margin-bottom: 20px;
+    }.secao-metodo /* Separador sutil */
+    .sec-metodo__card-sep{
+      width: 30px;
+      height: 1px;
+      background-color: #3a2a52;
+      margin-bottom: 18px;
+    }.secao-metodo /* Texto do card */
+    .sec-metodo__card-texto{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.77;
+      color: #b7a6cf;
+    }.secao-metodo /* ----- MOBILE (trilha vertical) ----- */
+
+    @media (max-width: 767px){
+      .sec-metodo {
+        padding: 64px 20px 72px;
+      }.secao-metodo .sec-metodo__intro{
+        margin-bottom: 48px;
+      }.secao-metodo .sec-metodo__trilha{
+        flex-direction: column;
+        align-items: center;
+      }.secao-metodo .sec-metodo__estacao{
+        width: 100%;
+        max-width: 440px;
+      }.secao-metodo /* Segmento vira linha vertical */
+      .sec-metodo__seg{
+        flex: 0 0 36px;
+        align-self: auto;
+        width: 2px;
+        height: 36px;
+        margin-top: 0;
+        background-image: repeating-linear-gradient(
+          180deg,
+          #c9a24b 0px,
+          #c9a24b 6px,
+          transparent 6px,
+          transparent 13px
+        );
+      }.secao-metodo .sec-metodo__card:hover{
+        transform: none;
+      }
+    }@media (max-width: 480px){
+      .sec-metodo__card-fase {
+        font-size: 19px;
+      }.secao-metodo .sec-metodo__card-texto{
+        font-size: 13.5px;
+      }
+    }
+
+/* === secao-paraquem (paraquem-gerada-vida-alem-da-tela.html) === */
+.secao-paraquem *, .secao-paraquem *::before, .secao-paraquem *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-paraquem .paraquem{
+      background-color: #140a20;
+      padding: 96px 24px;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-paraquem .paraquem__inner{
+      max-width: 1080px;
+      margin: 0 auto;
+    }.secao-paraquem .paraquem__headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(26px, 3.8vw, 42px);
+      font-weight: 600;
+      color: #f4eefb;
+      line-height: 1.22;
+      text-align: center;
+      max-width: 660px;
+      margin: 0 auto 64px;
+    }.secao-paraquem .paraquem__grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }.secao-paraquem .paraquem__card{
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+    }.secao-paraquem .paraquem__card-label{
+      display: block;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }.secao-paraquem .paraquem__card-label--sim{
+      color: #c9a24b;
+    }.secao-paraquem .paraquem__card-label--nao{
+      color: #b7a6cf;
+    }.secao-paraquem .paraquem__divider{
+      width: 32px;
+      height: 1px;
+      margin-bottom: 28px;
+    }.secao-paraquem .paraquem__card--sim .paraquem__divider{
+      background-color: #c9a24b;
+      opacity: 0.45;
+    }.secao-paraquem .paraquem__card--nao .paraquem__divider{
+      background-color: #3a2a52;
+    }.secao-paraquem .paraquem__list{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }.secao-paraquem .paraquem__item{
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }.secao-paraquem .paraquem__symbol{
+      flex-shrink: 0;
+      width: 18px;
+      height: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 3px;
+    }.secao-paraquem .paraquem__symbol--check svg{
+      width: 15px;
+      height: 15px;
+    }.secao-paraquem .paraquem__symbol--x{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #b7a6cf;
+      line-height: 1;
+      opacity: 0.6;
+    }.secao-paraquem .paraquem__item-text{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+    }.secao-paraquem .paraquem__item-text--sim{
+      color: #f4eefb;
+    }.secao-paraquem .paraquem__item-text--nao{
+      color: #b7a6cf;
+    }@media (max-width: 640px){
+      .paraquem {
+        padding: 64px 20px;
+      }.secao-paraquem .paraquem__headline{
+        font-size: 26px;
+        margin-bottom: 40px;
+      }.secao-paraquem .paraquem__grid{
+        grid-template-columns: 1fr;
+      }.secao-paraquem .paraquem__card{
+        padding: 28px;
+      }
+    }
+
+/* === secao-entregaveis (entregaveis-gerada-vida-alem-da-tela.html) === */
+.secao-entregaveis *, .secao-entregaveis *::before, .secao-entregaveis *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-entregaveis .entregaveis-section{
+      background-color: #140a20;
+      padding: 96px 24px;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-entregaveis .entregaveis-container{
+      max-width: 920px;
+      margin: 0 auto;
+    }.secao-entregaveis .entregaveis-eyebrow{
+      display: block;
+      text-align: center;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #c9a24b;
+      margin-bottom: 18px;
+    }.secao-entregaveis .entregaveis-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 600;
+      color: #f4eefb;
+      text-align: center;
+      line-height: 1.22;
+      margin-bottom: 60px;
+    }.secao-entregaveis .entregaveis-grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-bottom: 28px;
+    }.secao-entregaveis .entregavel-card{
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      padding: 30px 26px 22px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.38);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.22s ease;
+    }.secao-entregaveis .entregavel-card:hover{
+      border-color: rgba(201,162,75,0.45);
+    }.secao-entregaveis .entregavel-card--destaque{
+      grid-column: 1 / -1;
+    }.secao-entregaveis .entregavel-numero{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 11px;
+      font-weight: 400;
+      color: #c9a24b;
+      letter-spacing: 0.12em;
+      opacity: 0.72;
+    }.secao-entregaveis .entregavel-nome{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #f4eefb;
+      line-height: 1.25;
+    }.secao-entregaveis .entregavel-card--destaque .entregavel-nome{
+      font-size: 22px;
+    }.secao-entregaveis .entregavel-descricao{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #b7a6cf;
+      line-height: 1.68;
+      flex: 1;
+    }.secao-entregaveis .entregavel-card--destaque .entregavel-descricao{
+      font-size: 15px;
+    }.secao-entregaveis .entregavel-footer{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 10px;
+      padding-top: 14px;
+      border-top: 1px solid #3a2a52;
+    }.secao-entregaveis .entregavel-valor{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #c9a24b;
+      letter-spacing: 0.02em;
+    }.secao-entregaveis .entregaveis-nota{
+      background-color: #2c1a43;
+      border-left: 3px solid #c9a24b;
+      border-radius: 0 14px 14px 0;
+      padding: 28px 36px;
+    }.secao-entregaveis .entregaveis-nota-titulo{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #c9a24b;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }.secao-entregaveis .entregaveis-nota-texto{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: #b7a6cf;
+      line-height: 1.68;
+    }.secao-entregaveis .entregaveis-nota-texto strong{
+      color: #f4eefb;
+      font-weight: 600;
+    }@media (max-width: 640px){
+      .entregaveis-section {
+        padding: 64px 20px;
+      }.secao-entregaveis .entregaveis-grid{
+        grid-template-columns: 1fr;
+      }.secao-entregaveis .entregavel-card--destaque{
+        grid-column: 1;
+      }.secao-entregaveis .entregaveis-nota{
+        padding: 24px 22px;
+      }
+    }
+
+/* === secao-bonus (bonus-gerada-vida-alem-da-tela.html) === */
+.secao-bonus /* SECAO BONUS: Vida Além da Tela
+       CSS isolado. Sem :root, .secao-bonus sem var(--ds-*). Cores em HEX literal. */
+
+    *, .secao-bonus *::before, .secao-bonus *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-bonus .bonus-section{
+      background-color: #140a20;
+      padding: 96px 24px 112px;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-bonus .bonus-inner{
+      max-width: 1080px;
+      margin: 0 auto;
+    }.secao-bonus /* Cabecalho */
+
+    .bonus-header{
+      text-align: center;
+      margin-bottom: 64px;
+    }.secao-bonus .bonus-eyebrow{
+      display: inline-block;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #c9a24b;
+      margin-bottom: 22px;
+    }.secao-bonus .bonus-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(1.75rem, 3.8vw, 2.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #f4eefb;
+      max-width: 640px;
+      margin: 0 auto 28px;
+    }.secao-bonus .bonus-divider{
+      width: 44px;
+      height: 2px;
+      background-color: #c9a24b;
+      border-radius: 2px;
+      margin: 0 auto;
+    }.secao-bonus /* Grid */
+
+    .bonus-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }@media (max-width: 860px){
+      .bonus-grid {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        margin: 0 auto;
+        gap: 24px;
+      }
+    }.secao-bonus /* Card */
+
+    .bonus-card{
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+      padding: 32px 28px 36px;
+      display: flex;
+      flex-direction: column;
+    }.secao-bonus /* Selo */
+
+    .bonus-seal{
+      display: inline-flex;
+      align-items: center;
+      background-color: #c9a24b;
+      color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 22px;
+      width: fit-content;
+    }.secao-bonus /* Titulo do card */
+
+    .bonus-card-title{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #f4eefb;
+      margin-bottom: 14px;
+    }.secao-bonus /* Linha decorativa interna */
+
+    .bonus-card-rule{
+      width: 30px;
+      height: 1px;
+      background-color: #3a2a52;
+      margin-bottom: 16px;
+      border: none;
+    }.secao-bonus /* Descricao */
+
+    .bonus-card-desc{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #b7a6cf;
+      flex-grow: 1;
+      margin-bottom: 28px;
+    }.secao-bonus /* Bloco de valor */
+
+    .bonus-value-block{
+      border-top: 1px solid #3a2a52;
+      padding-top: 22px;
+      margin-top: auto;
+    }.secao-bonus .bonus-value-label{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #b7a6cf;
+      margin-bottom: 6px;
+    }.secao-bonus .bonus-value{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #c9a24b;
+      margin-bottom: 7px;
+    }.secao-bonus .bonus-included{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.76rem;
+      font-weight: 500;
+      color: #b7a6cf;
+    }.secao-bonus .bonus-included strong{
+      color: #e4c877;
+      font-weight: 700;
+    }
+
+/* === secao-stack (stack-gerada-vida-alem-da-tela.html) === */
+.secao-stack *, .secao-stack *::before, .secao-stack *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-stack{
+      background: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-stack .stack-section{
+      background: #140a20;
+      padding: 48px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }.secao-stack .stack-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 26px;
+      color: #f4eefb;
+      text-align: center;
+      line-height: 1.25;
+      max-width: 560px;
+      margin-bottom: 32px;
+      letter-spacing: -0.01em;
+    }.secao-stack .stack-card{
+      background: #211334;
+      border: 2px solid #c9a24b;
+      border-radius: 14px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 0 40px rgba(201,162,75,0.12);
+      padding: 28px;
+      width: 100%;
+      max-width: 600px;
+    }.secao-stack .stack-items{
+      list-style: none;
+    }.secao-stack .stack-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px solid #3a2a52;
+    }.secao-stack .stack-item:first-child{
+      padding-top: 0;
+    }.secao-stack .stack-item:last-child{
+      border-bottom: none;
+      padding-bottom: 0;
+    }.secao-stack .stack-item-name{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #b7a6cf;
+      line-height: 1.45;
+      flex: 1;
+    }.secao-stack .stack-bonus-label{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 10px;
+      color: #c9a24b;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-right: 5px;
+    }.secao-stack .stack-item-value{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: #f4eefb;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }.secao-stack .stack-total-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 16px 0 0;
+      margin-top: 4px;
+      border-top: 2px solid #3a2a52;
+    }.secao-stack .stack-total-label{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: #b7a6cf;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 13px;
+    }.secao-stack .stack-total-value{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: #6b5a8a;
+      text-decoration: line-through;
+      text-decoration-color: #6b5a8a;
+    }.secao-stack .stack-price-block{
+      text-align: center;
+      padding: 28px 0 20px;
+    }.secao-stack .stack-price-label{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #b7a6cf;
+      margin-bottom: 10px;
+    }.secao-stack .stack-price-main{
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 52px;
+      color: #c9a24b;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }.secao-stack .stack-divider{
+      width: 100%;
+      height: 1px;
+      background: #3a2a52;
+      margin: 4px 0 20px;
+    }.secao-stack .stack-installment{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #b7a6cf;
+      font-style: italic;
+      text-align: center;
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }.secao-stack .stack-cta-btn{
+      display: block;
+      width: 100%;
+      background: #c9a24b;
+      color: #140a20;
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      padding: 18px 34px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      text-decoration: none;
+      line-height: 1.2;
+    }.secao-stack .stack-cta-btn:hover{
+      background: #e4c877;
+    }.secao-stack .stack-cta-btn:focus-visible{
+      outline: 2px solid #e4c877;
+      outline-offset: 3px;
+    }@media (min-width: 640px){
+      .stack-section {
+        padding: 80px 24px;
+      }.secao-stack .stack-headline{
+        font-size: 36px;
+        margin-bottom: 40px;
+      }.secao-stack .stack-card{
+        padding: 40px;
+      }.secao-stack .stack-price-main{
+        font-size: 56px;
+      }.secao-stack .stack-price-block{
+        padding: 32px 0 24px;
+      }
+    }
+
+/* === secao-prova2 (prova2-gerada-vida-alem-da-tela.html) === */
+.secao-prova2 *, .secao-prova2 *::before, .secao-prova2 *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-prova2{
+      background-color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #f4eefb;
+      -webkit-font-smoothing: antialiased;
+    }.secao-prova2 .prova2-section{
+      background-color: #140a20;
+      padding: 96px 24px;
+    }.secao-prova2 .prova2-inner{
+      max-width: 720px;
+      margin: 0 auto;
+    }.secao-prova2 /* Cabecalho */
+    .prova2-header{
+      text-align: center;
+      margin-bottom: 56px;
+    }.secao-prova2 .prova2-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(28px, 5vw, 36px);
+      font-weight: 600;
+      line-height: 1.25;
+      color: #f4eefb;
+      max-width: 560px;
+      margin: 0 auto 24px;
+      letter-spacing: -0.01em;
+    }.secao-prova2 .prova2-divider{
+      width: 40px;
+      height: 2px;
+      background-color: #c9a24b;
+      margin: 0 auto;
+      border: none;
+    }.secao-prova2 /* Cards */
+    .prova2-cards{
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }.secao-prova2 .prova2-card{
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+      padding: 40px 44px;
+    }.secao-prova2 /* Aspas decorativas */
+    .prova2-quote-mark{
+      display: block;
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 90px;
+      line-height: 0.8;
+      color: #c9a24b;
+      opacity: 0.35;
+      margin-bottom: 12px;
+      margin-left: -6px;
+      user-select: none;
+    }.secao-prova2 /* Texto do depoimento */
+    .prova2-text{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16.5px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #f4eefb;
+      margin-bottom: 28px;
+    }.secao-prova2 .prova2-text .stat{
+      color: #c9a24b;
+      font-weight: 600;
+    }.secao-prova2 /* Divisor interno */
+    .prova2-rule{
+      border: none;
+      border-top: 1px solid #3a2a52;
+      margin-bottom: 24px;
+    }.secao-prova2 /* Assinatura */
+    .prova2-author{
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }.secao-prova2 .prova2-avatar{
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      border-radius: 50%;
+      background-color: #2c1a43;
+      border: 1px solid #3a2a52;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      color: #b7a6cf;
+      text-align: center;
+      line-height: 1.2;
+    }.secao-prova2 .prova2-name{
+      display: block;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #f4eefb;
+      margin-bottom: 3px;
+    }.secao-prova2 .prova2-role{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: #b7a6cf;
+    }.secao-prova2 /* Responsivo */
+    @media (max-width: 600px){
+      .prova2-section {
+        padding: 72px 20px;
+      }.secao-prova2 .prova2-card{
+        padding: 32px 24px;
+      }.secao-prova2 .prova2-quote-mark{
+        font-size: 72px;
+      }.secao-prova2 .prova2-text{
+        font-size: 15.5px;
+      }
+    }
+
+/* === secao-suporte (suporte-gerada-vida-alem-da-tela.html) === */
+.secao-suporte *, .secao-suporte *::before, .secao-suporte *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-suporte{
+      background-color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-suporte .suporte-section{
+      background-color: #211334;
+      padding: 88px 24px;
+    }.secao-suporte .suporte-inner{
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }.secao-suporte .suporte-emblem{
+      width: 88px;
+      height: 88px;
+      margin-bottom: 36px;
+    }.secao-suporte .suporte-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(34px, 5.5vw, 50px);
+      font-weight: 700;
+      color: #f4eefb;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }.secao-suporte .suporte-accent-line{
+      width: 40px;
+      height: 1px;
+      background-color: #c9a24b;
+      margin: 0 auto 32px;
+    }.secao-suporte .suporte-body{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: clamp(15px, 2vw, 17px);
+      font-weight: 400;
+      color: #b7a6cf;
+      line-height: 1.8;
+      max-width: 580px;
+    }.secao-suporte .suporte-body em{
+      color: #f4eefb;
+      font-style: normal;
+      font-weight: 500;
+    }@media (max-width: 600px){
+      .suporte-section {
+        padding: 56px 20px;
+      }.secao-suporte .suporte-emblem{
+        width: 72px;
+        height: 72px;
+        margin-bottom: 28px;
+      }
+    }
+
+/* === secao-garantia (garantia-gerada-vida-alem-da-tela.html) === */
+.secao-garantia *, .secao-garantia *::before, .secao-garantia *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-garantia{
+      background: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-garantia .garantia-section{
+      background: radial-gradient(ellipse 72% 65% at 50% 50%, #2c1a43 0%, #140a20 68%);
+      padding: 96px 24px;
+    }.secao-garantia .garantia-inner{
+      max-width: 880px;
+      margin: 0 auto;
+    }.secao-garantia .garantia-card{
+      background: #211334;
+      border: 1px solid #3a2a52;
+      border-radius: 14px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+      padding: 56px 56px;
+      display: flex;
+      align-items: center;
+      gap: 56px;
+    }.secao-garantia /* Selo circular */
+    .garantia-seal-wrapper{
+      flex-shrink: 0;
+      position: relative;
+      width: 184px;
+      height: 184px;
+    }@keyframes seal-spin{
+      from { transform: rotate(0deg); }.secao-garantia to{ transform: rotate(360deg); }
+    }.secao-garantia .garantia-seal-shimmer{
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #c9a24b   0deg,
+        #e4c877  55deg,
+        #c9a24b 120deg,
+        #7a5e1c 180deg,
+        #c9a24b 240deg,
+        #e4c877 300deg,
+        #c9a24b 360deg
+      );
+      animation: seal-spin 7s linear infinite;
+      z-index: 0;
+    }.secao-garantia .garantia-seal{
+      position: absolute;
+      inset: 5px;
+      border-radius: 50%;
+      background: #1a0d2e;
+      border: 2px solid #c9a24b;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 14px 10px;
+    }.secao-garantia .garantia-seal-label{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.20em;
+      color: #c9a24b;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 6px;
+    }.secao-garantia .garantia-seal-days{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      color: #e4c877;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }.secao-garantia .garantia-seal-unit{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: #c9a24b;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-top: 4px;
+    }.secao-garantia .garantia-seal-sub{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      font-style: italic;
+      color: #b7a6cf;
+      line-height: 1.35;
+      margin-top: 9px;
+      max-width: 88px;
+    }.secao-garantia /* Conteudo */
+    .garantia-content{
+      flex: 1;
+    }.secao-garantia .garantia-divider{
+      width: 36px;
+      height: 2px;
+      background: #c9a24b;
+      border-radius: 2px;
+      margin-bottom: 22px;
+    }.secao-garantia .garantia-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(26px, 3.8vw, 34px);
+      font-weight: 600;
+      color: #f4eefb;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 22px;
+    }.secao-garantia .garantia-body{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      color: #b7a6cf;
+      line-height: 1.80;
+    }.secao-garantia .garantia-body p + p{
+      margin-top: 14px;
+    }.secao-garantia .garantia-emphasis{
+      color: #f4eefb;
+      font-weight: 500;
+    }.secao-garantia /* Responsivo */
+    @media (max-width: 680px){
+      .garantia-section {
+        padding: 72px 20px;
+      }.secao-garantia .garantia-card{
+        flex-direction: column;
+        align-items: center;
+        padding: 44px 28px;
+        gap: 36px;
+        text-align: center;
+      }.secao-garantia .garantia-divider{
+        margin-left: auto;
+        margin-right: auto;
+      }.secao-garantia .garantia-seal-wrapper{
+        width: 168px;
+        height: 168px;
+      }.secao-garantia .garantia-seal-days{
+        font-size: 44px;
+      }.secao-garantia .garantia-headline{
+        font-size: 26px;
+      }
+    }
+
+/* === secao-autoridade (autoridade-gerada-vida-alem-da-tela.html) === */
+.secao-autoridade *, .secao-autoridade *::before, .secao-autoridade *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-autoridade{
+      background-color: #140a20;
+    }.secao-autoridade .autoridade-secao{
+      background-color: #140a20;
+      padding: 96px 24px;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-autoridade .autoridade-container{
+      max-width: 1080px;
+      margin: 0 auto;
+    }.secao-autoridade .autoridade-grid{
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      gap: 72px;
+      align-items: start;
+    }.secao-autoridade /* ---- FOTO ---- */
+    .autoridade-foto-wrapper{
+      display: flex;
+      justify-content: flex-start;
+    }.secao-autoridade .autoridade-foto-placeholder{
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      border-radius: 14px;
+      border: 1px solid rgba(201, 162, 75, 0.30);
+      background-color: #211334;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }.secao-autoridade .autoridade-foto-label{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: #b7a6cf;
+      text-align: center;
+      padding: 20px;
+      letter-spacing: 0.03em;
+      opacity: 0.7;
+    }.secao-autoridade /* ---- CONTEUDO ---- */
+    .autoridade-conteudo{
+      display: flex;
+      flex-direction: column;
+      padding-top: 4px;
+    }.secao-autoridade /* ---- EPIGRAFE ---- */
+    .autoridade-epigrafe{
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 36px;
+    }.secao-autoridade .autoridade-aspa{
+      font-family: Georgia, serif;
+      font-size: 5rem;
+      color: #c9a24b;
+      line-height: 1;
+      position: absolute;
+      top: -10px;
+      left: -2px;
+      opacity: 0.75;
+      user-select: none;
+      aria-hidden: true;
+    }.secao-autoridade .autoridade-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: #f4eefb;
+      line-height: 1.4;
+    }.secao-autoridade /* ---- NOME + SEPARADOR ---- */
+    .autoridade-nome-bloco{
+      margin-bottom: 32px;
+    }.secao-autoridade .autoridade-nome{
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #f4eefb;
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+      margin-bottom: 16px;
+    }.secao-autoridade .autoridade-separador{
+      display: block;
+      width: 40px;
+      height: 2px;
+      background-color: #c9a24b;
+      border: none;
+      border-radius: 2px;
+    }.secao-autoridade /* ---- TEXTO ---- */
+    .autoridade-texto{
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }.secao-autoridade .autoridade-paragrafo{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #b7a6cf;
+      font-weight: 400;
+    }.secao-autoridade .autoridade-kw{
+      color: #f4eefb;
+    }.secao-autoridade /* ---- MOBILE ---- */
+    @media (max-width: 768px){
+      .autoridade-secao {
+        padding: 64px 20px;
+      }.secao-autoridade .autoridade-grid{
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }.secao-autoridade .autoridade-foto-wrapper{
+        justify-content: center;
+      }.secao-autoridade .autoridade-foto-placeholder{
+        width: clamp(180px, 60vw, 280px);
+        aspect-ratio: 4 / 5;
+      }.secao-autoridade .autoridade-headline{
+        font-size: 1.25rem;
+      }.secao-autoridade .autoridade-nome{
+        font-size: 1.625rem;
+      }.secao-autoridade .autoridade-epigrafe{
+        padding-left: 28px;
+        margin-bottom: 28px;
+      }.secao-autoridade .autoridade-aspa{
+        font-size: 4rem;
+      }
+    }
+
+/* === secao-faq (faq-gerada-vida-alem-da-tela.html) === */
+.secao-faq *, .secao-faq *::before, .secao-faq *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-faq{
+      background-color: #140a20;
+      color: #f4eefb;
+      font-family: 'Inter', system-ui, sans-serif;
+    }.secao-faq .faq-section{
+      background-color: #140a20;
+      padding: 96px 24px;
+    }.secao-faq .faq-container{
+      max-width: 720px;
+      margin: 0 auto;
+    }.secao-faq .faq-eyebrow{
+      display: block;
+      width: 40px;
+      height: 2px;
+      background-color: #c9a24b;
+      margin: 0 auto 28px auto;
+    }.secao-faq .faq-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #f4eefb;
+      text-align: center;
+      line-height: 1.25;
+      margin-bottom: 56px;
+    }.secao-faq .faq-list{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      list-style: none;
+    }.secao-faq .faq-item{
+      background-color: #211334;
+      border: 1px solid #3a2a52;
+      border-left: 3px solid transparent;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-left-color 0.25s ease, box-shadow 0.25s ease;
+    }.secao-faq .faq-item.is-open{
+      border-left-color: #c9a24b;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+    }.secao-faq .faq-trigger{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 22px 24px;
+      text-align: left;
+      gap: 16px;
+    }.secao-faq .faq-trigger:focus-visible{
+      outline: 2px solid #c9a24b;
+      outline-offset: -2px;
+      border-radius: 12px;
+    }.secao-faq .faq-question{
+      font-family: 'Fraunces', Georgia, serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #f4eefb;
+      line-height: 1.4;
+      flex: 1;
+    }.secao-faq .faq-chevron{
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
+    }.secao-faq .faq-item.is-open .faq-chevron{
+      transform: rotate(180deg);
+    }.secao-faq .faq-answer-wrap{
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }.secao-faq .faq-answer{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: #b7a6cf;
+      line-height: 1.72;
+      padding: 0 24px 22px 24px;
+    }@media (max-width: 600px){
+      .faq-section {
+        padding: 72px 20px;
+      }.secao-faq .faq-headline{
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+      }.secao-faq .faq-trigger{
+        padding: 18px 20px;
+      }.secao-faq .faq-question{
+        font-size: 0.98rem;
+      }.secao-faq .faq-answer{
+        padding: 0 20px 18px 20px;
+        font-size: 0.92rem;
+      }
+    }
+
+/* === secao-oferta (oferta-gerada-vida-alem-da-tela.html) === */
+.secao-oferta *, .secao-oferta *::before, .secao-oferta *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-oferta{
+      background-color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #f4eefb;
+      -webkit-font-smoothing: antialiased;
+    }.secao-oferta .oferta-final{
+      background-color: #140a20;
+      padding: 100px 24px;
+    }.secao-oferta .oferta-inner{
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }.secao-oferta .oferta-divider{
+      width: 48px;
+      height: 2px;
+      background-color: #c9a24b;
+      margin: 0 auto 52px;
+      opacity: 0.55;
+    }.secao-oferta .oferta-headline{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(30px, 5vw, 50px);
+      font-weight: 700;
+      line-height: 1.14;
+      color: #f4eefb;
+      letter-spacing: -0.02em;
+      margin-bottom: 52px;
+    }.secao-oferta .oferta-corpo{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: clamp(15px, 2vw, 17px);
+      line-height: 1.8;
+      color: #b7a6cf;
+      max-width: 640px;
+      margin: 0 auto 56px;
+      text-align: left;
+    }.secao-oferta .oferta-corpo p + p{
+      margin-top: 32px;
+    }.secao-oferta .oferta-corpo .paragrafo-travessia{
+      color: #f4eefb;
+      border-left: 3px solid #c9a24b;
+      padding-left: 20px;
+    }.secao-oferta .oferta-preco-box{
+      background-color: #211334;
+      border-radius: 14px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+      border: 1px solid #3a2a52;
+      padding: 44px 48px 36px;
+      margin: 0 auto 36px;
+      max-width: 460px;
+      text-align: center;
+    }.secao-oferta .preco-label{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: #b7a6cf;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
+    }.secao-oferta .preco-riscado{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: #b7a6cf;
+      text-decoration: line-through;
+      text-decoration-color: #b7a6cf;
+      margin-bottom: 6px;
+    }.secao-oferta .preco-principal{
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(54px, 9vw, 64px);
+      font-weight: 700;
+      color: #c9a24b;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+    }.secao-oferta .preco-parcelado{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #b7a6cf;
+      margin-bottom: 28px;
+    }.secao-oferta .preco-garantia{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13px;
+      font-style: italic;
+      color: #b7a6cf;
+      border-top: 1px solid #3a2a52;
+      padding-top: 20px;
+      line-height: 1.6;
+    }.secao-oferta .oferta-cta-wrap{
+      max-width: 460px;
+      margin: 0 auto 16px;
+    }.secao-oferta .oferta-cta{
+      display: block;
+      width: 100%;
+      background-color: #c9a24b;
+      color: #140a20;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-decoration: none;
+      padding: 20px 32px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+      text-align: center;
+      letter-spacing: -0.01em;
+      box-shadow: 0 6px 24px rgba(201, 162, 75, 0.25);
+    }.secao-oferta .oferta-cta:hover{
+      background-color: #e4c877;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(201, 162, 75, 0.35);
+    }.secao-oferta .oferta-cta:active{
+      transform: translateY(0);
+      box-shadow: 0 4px 16px rgba(201, 162, 75, 0.2);
+    }.secao-oferta .oferta-legal{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 12px;
+      line-height: 1.6;
+      color: #b7a6cf;
+      text-align: center;
+      max-width: 460px;
+      margin: 0 auto;
+      opacity: 0.65;
+    }@media (max-width: 640px){
+      .oferta-final {
+        padding: 72px 20px;
+      }.secao-oferta .oferta-preco-box{
+        padding: 32px 24px 28px;
+      }.secao-oferta .oferta-cta{
+        font-size: 16px;
+        padding: 18px 20px;
+      }.secao-oferta .oferta-headline{
+        margin-bottom: 40px;
+      }.secao-oferta .oferta-corpo{
+        margin-bottom: 44px;
+      }
+    }
+</style>
+</head>
+<body>
+
+<div class="secao-hero">
+<section class="hero" aria-label="Seção principal">
+    <div class="hero__inner">
+
+      <div class="hero__eyebrow" aria-hidden="true">
+        <span class="hero__eyebrow-line"></span>
+        <span class="hero__eyebrow-text">Vida Além da Tela</span>
+      </div>
+
+      <h1 class="hero__headline">
+        Você já prometeu a Deus que ia largar o celular de manhã<br>
+        e pegou de novo antes de orar hoje.
+      </h1>
+
+      <div class="hero__divider" aria-hidden="true"></div>
+
+      <p class="hero__subheadline">
+        O problema não é falta de fé nem preguiça. A tela foi construída por engenheiros para prender a sua atenção, do mesmo jeito que uma substância prende um dependente. E ninguém sai de uma escravidão só apertando os dentes e tentando com mais vontade. Existe um caminho de recuperação, um dia de cada vez, e ele começa antes de você tentar largar qualquer coisa.
+      </p>
+
+      <ul class="hero__bullets" aria-label="O que você vai conseguir">
+        <li class="hero__bullet">
+          <span class="hero__bullet-marker" aria-hidden="true"></span>
+          <span>Abrir a Bíblia de manhã e sustentar a leitura até o fim, sem a mente puxar para o feed a cada dois versículos.</span>
+        </li>
+        <li class="hero__bullet">
+          <span class="hero__bullet-marker" aria-hidden="true"></span>
+          <span>Sentar à mesa e ter uma refeição inteira de conversa real com quem você ama, sem ninguém pegar o celular.</span>
+        </li>
+        <li class="hero__bullet">
+          <span class="hero__bullet-marker" aria-hidden="true"></span>
+          <span>Chegar ao fim do dia com a sensação de ter vivido algo de verdade, e não de ter só assistido a vida dos outros passar.</span>
+        </li>
+      </ul>
+
+      <div class="hero__cta-wrap">
+        <a href="#" class="hero__cta">Quero dar o primeiro passo</a>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-dor">
+<section class="dor-section" aria-label="Seção de dor">
+    <div class="dor-container">
+
+      <h2 class="dor-headline">
+        O celular não roubou só o seu tempo.<br>
+        Roubou a sua presença.
+      </h2>
+
+      <div class="dor-body">
+
+        <p>Você acorda e a primeira coisa que a sua mão procura não é a Bíblia, é o celular. Antes de dizer bom dia para Deus ou para quem dorme do seu lado, você já rolou o feed, já viu a vida de dez pessoas, já sentiu inveja de duas e raiva de uma. O dia ainda não começou e a sua cabeça já foi sequestrada.</p>
+
+        <p>No culto, o pastor prega e você está lá de corpo, mas a mente escapa para o bolso a cada cinco minutos. Em casa, o seu filho começa a te contar algo importante e você responde "uhum" sem tirar os olhos da tela, e ele aprende, calado, que o telefone é mais interessante que ele. À noite, você rola o feed por uma hora, larga o aparelho e não consegue lembrar de uma única coisa que viu. Só sobra a sensação de vazio e a promessa, mais uma vez, de que amanhã vai ser diferente.</p>
+
+        <p>Só que amanhã não é diferente. E não é porque você é fraco ou pouco espiritual. É porque cada aplicativo no seu telefone foi desenhado por times de engenheiros e psicólogos com um único objetivo: manter você rolando o máximo de tempo possível. Cada notificação, cada rolagem infinita, cada vídeo que já começa sozinho aciona no seu cérebro a mesma substância que prende um dependente químico. Você não está lutando contra um mau hábito. Está lutando contra uma máquina bilionária construída para te vencer.</p>
+
+        <p>A Bíblia já tinha dado o nome disso muito antes de existir smartphone.</p>
+
+        <blockquote class="dor-blockquote" aria-label="Citação bíblica">
+          <p>De quem alguém é vencido, dele também se faz escravo.</p>
+        </blockquote>
+
+        <p>A tela te venceu. E escravo ninguém liberta com força de vontade. Se liberta com um caminho de saída.</p>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="secao-paliativo">
+<section class="paliativo-section" aria-labelledby="paliativo-headline">
+    <div class="paliativo-inner">
+
+      <header class="paliativo-header">
+        <h2 class="paliativo-headline" id="paliativo-headline">
+          <span class="hl-line">Você já tentou de tudo.</span>
+          <span class="hl-line">E cada tentativa falhou pelo mesmo motivo.</span>
+        </h2>
+      </header>
+
+      <div class="paliativo-grid" role="list">
+
+        <article class="paliativo-card" role="listitem">
+          <span class="paliativo-card-num" aria-label="Tentativa 01">01</span>
+          <h3 class="paliativo-card-title">O app de bloqueio</h3>
+          <div class="paliativo-card-rule" aria-hidden="true"></div>
+          <p class="paliativo-card-body">Você baixou um aplicativo de bloqueio, desses que prometem trancar as redes sociais por um tempo. Durou três dias. No quarto, você mesmo digitou a senha para liberar, porque a vontade foi mais forte que o cadeado. O app não errou. Ele só não resolve a raiz, ele tenta segurar do lado de fora uma pressão que vem de dentro.</p>
+        </article>
+
+        <article class="paliativo-card" role="listitem">
+          <span class="paliativo-card-num" aria-label="Tentativa 02">02</span>
+          <h3 class="paliativo-card-title">O livro sobre dopamina</h3>
+          <div class="paliativo-card-rule" aria-hidden="true"></div>
+          <p class="paliativo-card-body">Você leu um livro sobre dopamina, entendeu tudo, achou fascinante, e no dia seguinte estava rolando o feed do mesmo jeito. Saber por que o vício acontece não liberta ninguém do vício, do contrário todo médico seria magro e todo terapeuta seria calmo. Informação não é recuperação.</p>
+        </article>
+
+        <article class="paliativo-card" role="listitem">
+          <span class="paliativo-card-num" aria-label="Tentativa 03">03</span>
+          <h3 class="paliativo-card-title">O desafio de vinte reais</h3>
+          <div class="paliativo-card-rule" aria-hidden="true"></div>
+          <p class="paliativo-card-body">Você já comprou aquele desafio de detox de vinte reais, cheio de dicas óbvias: "deixe o celular em outro cômodo", "desative notificações". Dicas soltas, sem ninguém do seu lado, sem passo a passo, sem prestação de contas. No terceiro dia ninguém lembrava que você tinha começado, inclusive você.</p>
+        </article>
+
+        <article class="paliativo-card" role="listitem">
+          <span class="paliativo-card-num" aria-label="Tentativa 04">04</span>
+          <h3 class="paliativo-card-title">As pregações sobre mordomia</h3>
+          <div class="paliativo-card-rule" aria-hidden="true"></div>
+          <p class="paliativo-card-body">Você já ouviu boas pregações sobre mordomia do tempo, saiu do culto convicto, decidido, quebrantado. A convicção durou até o farol vermelho no caminho para casa, quando a mão pegou o celular sozinha. Convicção sem método é remorso que se repete todo domingo.</p>
+        </article>
+
+      </div>
+
+      <aside class="paliativo-closing" aria-label="Conclusão da seção">
+        <p class="paliativo-closing-text">Nenhuma dessas coisas é inútil. O problema é que todas atacam o sintoma e deixam a doença intacta. Vício comportamental não se vence com cadeado, com teoria, com dica solta nem com culpa. Se vence do jeito que o mundo já sabe vencer vício há mais de oitenta anos, com um caminho estruturado, um passo de cada vez, e alguém para caminhar junto.</p>
+      </aside>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-prova1">
+<section class="prova-social" aria-label="Depoimentos">
+    <div class="prova-social__container">
+
+      <span class="prova-social__separator" aria-hidden="true"></span>
+
+      <h2 class="prova-social__headline">
+        Gente que já tinha tentado de tudo,<br>e dessa vez atravessou.
+      </h2>
+
+      <div class="prova-social__grid">
+
+        <!-- Card 1: Marcos -->
+        <article class="depoimento-card">
+          <span class="depoimento-card__aspas" aria-hidden="true">&ldquo;</span>
+          <p class="depoimento-card__texto">
+            Eu tinha tentado parar <span class="highlight-num">quatro vezes</span>. A mais longa durou <span class="highlight-num">onze dias</span>. Aqui foi a primeira vez que fui do <span class="highlight-num">quinto dia</span> em diante sem recair. Saí de <span class="highlight-num">5h40</span> para <span class="highlight-num">1h10</span> de tela por dia.
+          </p>
+          <div class="depoimento-card__footer">
+            <div class="depoimento-card__avatar" aria-label="Foto de Marcos">[foto]</div>
+            <div class="depoimento-card__info">
+              <span class="depoimento-card__nome">Marcos, 38 anos</span>
+              <span class="depoimento-card__cargo">Líder de igreja, São Paulo</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Letícia -->
+        <article class="depoimento-card">
+          <span class="depoimento-card__aspas" aria-hidden="true">&ldquo;</span>
+          <p class="depoimento-card__texto">
+            Eu sabia tudo sobre dopamina, tinha lido três livros. Continuava seis horas na tela. O que mudou não foi saber mais, foi ter o mapa dos meus gatilhos e alguém cobrando todo dia. Fechei em <span class="highlight-num">1h45</span>.
+          </p>
+          <div class="depoimento-card__footer">
+            <div class="depoimento-card__avatar" aria-label="Foto de Letícia">[foto]</div>
+            <div class="depoimento-card__info">
+              <span class="depoimento-card__nome">Letícia, 31 anos</span>
+              <span class="depoimento-card__cargo">Professora, Recife</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Cláudia -->
+        <article class="depoimento-card">
+          <span class="depoimento-card__aspas" aria-hidden="true">&ldquo;</span>
+          <p class="depoimento-card__texto">
+            Voltei a jantar com meus filhos sem ninguém no celular. Minha filha reparou antes de mim.
+          </p>
+          <div class="depoimento-card__footer">
+            <div class="depoimento-card__avatar" aria-label="Foto de Cláudia">[foto]</div>
+            <div class="depoimento-card__info">
+              <span class="depoimento-card__nome">Cláudia, 44 anos</span>
+              <span class="depoimento-card__cargo">Contadora, Porto Alegre</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="secao-cta">
+<section class="cta-section" aria-label="Chamada para ação intermediária">
+    <div class="cta-inner">
+      <p class="cta-frase">
+        Você não precisa de mais uma promessa para amanhã.<br>
+        Precisa de um primeiro passo hoje, com um caminho debaixo dos pés.
+      </p>
+      <a href="#oferta" class="cta-btn">Começar a travessia agora</a>
+    </div>
+  </section>
+</div>
+
+<div class="secao-metodo">
+<section class="sec-metodo" aria-labelledby="metodo-headline-id">
+    <div class="sec-metodo__inner">
+
+      <!-- Eyebrow com dashes laterais -->
+      <div class="sec-metodo__eyebrow-row">
+        <div class="sec-metodo__eyebrow-dash" aria-hidden="true"></div>
+        <p class="sec-metodo__eyebrow">Método da Travessia</p>
+        <div class="sec-metodo__eyebrow-dash" aria-hidden="true"></div>
+      </div>
+
+      <!-- Headline principal -->
+      <h2 class="sec-metodo__headline" id="metodo-headline-id">
+        O mesmo arco que Deus usou para tirar um povo da escravidão,
+        aplicado ao que domina você hoje.
+      </h2>
+
+      <!-- Parágrafo introdutório -->
+      <p class="sec-metodo__intro">
+        Israel não saiu do Egito num pulo. Saiu atravessando. Primeiro precisou enxergar que estava escravo, depois precisou atravessar o deserto, e só então pisou na terra prometida. O celular te escravizou pela mesma lógica de todo vício, e você vai sair dele pela mesma travessia, em três fases, ao longo de catorze dias.
+      </p>
+
+      <!-- Trilha das 3 estações -->
+      <div class="sec-metodo__trilha" role="list" aria-label="Fases do Método da Travessia">
+
+        <!-- Estação 1: O Egito -->
+        <div class="sec-metodo__estacao" role="listitem">
+          <div class="sec-metodo__no" aria-hidden="true"></div>
+          <article class="sec-metodo__card">
+            <span class="sec-metodo__card-num" aria-hidden="true">01</span>
+            <div class="sec-metodo__card-wrap">
+              <p class="sec-metodo__card-estacao">O Egito</p>
+              <h3 class="sec-metodo__card-fase">Ver a escravidão</h3>
+              <span class="sec-metodo__card-dias">Dias 1 a 4</span>
+              <div class="sec-metodo__card-sep"></div>
+              <p class="sec-metodo__card-texto">
+                Você não proíbe nada ainda. Mede o tempo real que a tela toma, mapeia os gatilhos que fazem a sua mão pegar o aparelho sozinha, faz o inventário das perdas e declara a decisão para uma pessoa de confiança. O simples ato de medir um comportamento já o reduz, é a base da terapia cognitivo-comportamental. A mudança começa com menos resistência.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Segmento conector 1 para 2 -->
+        <div class="sec-metodo__seg" aria-hidden="true"></div>
+
+        <!-- Estação 2: O Deserto -->
+        <div class="sec-metodo__estacao" role="listitem">
+          <div class="sec-metodo__no" aria-hidden="true"></div>
+          <article class="sec-metodo__card">
+            <span class="sec-metodo__card-num" aria-hidden="true">02</span>
+            <div class="sec-metodo__card-wrap">
+              <p class="sec-metodo__card-estacao">O Deserto</p>
+              <h3 class="sec-metodo__card-fase">Atravessar o deserto</h3>
+              <span class="sec-metodo__card-dias">Dias 5 a 10</span>
+              <div class="sec-metodo__card-sep"></div>
+              <p class="sec-metodo__card-texto">
+                Força de vontade é um recurso que acaba no fim de um dia difícil, bem na hora em que o gatilho aparece. Por isso a travessia redesenha o ambiente ao seu redor, cria atrito onde a tela era fácil e zonas sagradas onde ela não entra, até o Dia do Deserto: doze horas totalmente offline. O ambiente passa a trabalhar por você vinte e quatro horas por dia.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Segmento conector 2 para 3 -->
+        <div class="sec-metodo__seg" aria-hidden="true"></div>
+
+        <!-- Estação 3: A Terra Prometida -->
+        <div class="sec-metodo__estacao" role="listitem">
+          <div class="sec-metodo__no" aria-hidden="true"></div>
+          <article class="sec-metodo__card">
+            <span class="sec-metodo__card-num" aria-hidden="true">03</span>
+            <div class="sec-metodo__card-wrap">
+              <p class="sec-metodo__card-estacao">A Terra Prometida</p>
+              <h3 class="sec-metodo__card-fase">Firmar a terra prometida</h3>
+              <span class="sec-metodo__card-dias">Dias 11 a 14</span>
+              <div class="sec-metodo__card-sep"></div>
+              <p class="sec-metodo__card-texto">
+                Você volta a usar o celular com regras escritas, no comando. Monta o plano de recaída "se isso, então aquilo", assume a nova identidade de quem domina a tela e sela o Pacto Permanente. A formação de um hábito leva em média sessenta e seis dias, por isso a travessia termina num pacto que continua rodando depois do desafio.
+              </p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-paraquem">
+<section class="paraquem" aria-label="Para quem é este programa">
+    <div class="paraquem__inner">
+
+      <h2 class="paraquem__headline">
+        Isso foi feito para um tipo específico de pessoa.<br>
+        Veja se é você.
+      </h2>
+
+      <div class="paraquem__grid">
+
+        <!-- Coluna SIM -->
+        <article class="paraquem__card paraquem__card--sim">
+          <span class="paraquem__card-label paraquem__card-label--sim">É para você se</span>
+          <div class="paraquem__divider" aria-hidden="true"></div>
+          <ul class="paraquem__list" aria-label="Perfis que se identificam com este programa">
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--check" aria-hidden="true">
+                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 7.5L6 11.5L13 3.5" stroke="#c9a24b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="paraquem__item-text paraquem__item-text--sim">Você é cristão, frequenta a igreja e sente que a tela roubou os primeiros quarenta minutos de toda manhã, o tempo que era de oração.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--check" aria-hidden="true">
+                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 7.5L6 11.5L13 3.5" stroke="#c9a24b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="paraquem__item-text paraquem__item-text--sim">Você é pai ou mãe e já ouviu do seu filho, com palavras ou com o silêncio dele, que o celular vem antes dele.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--check" aria-hidden="true">
+                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 7.5L6 11.5L13 3.5" stroke="#c9a24b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="paraquem__item-text paraquem__item-text--sim">Você lidera na igreja, prega, aconselha ou dirige célula, e percebe que a sua profundidade caiu sem conseguir nomear o motivo.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--check" aria-hidden="true">
+                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 7.5L6 11.5L13 3.5" stroke="#c9a24b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="paraquem__item-text paraquem__item-text--sim">Você tem vinte e poucos ou trinta e poucos anos, sente que não consegue mais ler um capítulo inteiro de livro e sabe que isso tem nome.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--check" aria-hidden="true">
+                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 7.5L6 11.5L13 3.5" stroke="#c9a24b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="paraquem__item-text paraquem__item-text--sim">Seu casamento está sendo trocado, aos poucos, por dois celulares na mesma cama.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--check" aria-hidden="true">
+                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 7.5L6 11.5L13 3.5" stroke="#c9a24b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="paraquem__item-text paraquem__item-text--sim">Você já tentou parar sozinho, recaiu, e sabe na prática que sozinho não funciona.</span>
+            </li>
+
+          </ul>
+        </article>
+
+        <!-- Coluna NÃO -->
+        <article class="paraquem__card paraquem__card--nao">
+          <span class="paraquem__card-label paraquem__card-label--nao">Não é para você se</span>
+          <div class="paraquem__divider" aria-hidden="true"></div>
+          <ul class="paraquem__list" aria-label="Perfis fora do escopo deste programa">
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--x" aria-hidden="true">&times;</span>
+              <span class="paraquem__item-text paraquem__item-text--nao">Você quer só produtividade, sem nenhuma âncora de fé.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--x" aria-hidden="true">&times;</span>
+              <span class="paraquem__item-text paraquem__item-text--nao">Você ainda não acha que o celular é um problema real na sua vida.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--x" aria-hidden="true">&times;</span>
+              <span class="paraquem__item-text paraquem__item-text--nao">Você quer apenas mais uma lista de dicas rápidas.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--x" aria-hidden="true">&times;</span>
+              <span class="paraquem__item-text paraquem__item-text--nao">Você não está disposto a catorze dias de prática diária, mesmo que curta.</span>
+            </li>
+
+            <li class="paraquem__item">
+              <span class="paraquem__symbol paraquem__symbol--x" aria-hidden="true">&times;</span>
+              <span class="paraquem__item-text paraquem__item-text--nao">Você procura tratamento clínico ou acompanhamento psicológico supervisionado. Nesse caso, procure um profissional primeiro.</span>
+            </li>
+
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="secao-entregaveis">
+<section class="entregaveis-section">
+    <div class="entregaveis-container">
+
+      <span class="entregaveis-eyebrow">O que está incluso</span>
+      <h2 class="entregaveis-headline">O que você recebe quando entra na travessia.</h2>
+
+      <div class="entregaveis-grid">
+
+        <article class="entregavel-card entregavel-card--destaque">
+          <span class="entregavel-numero">01</span>
+          <h3 class="entregavel-nome">Guia diário do Método da Travessia (14 dias)</h3>
+          <p class="entregavel-descricao">Um passo por dia, entregue no app, cada um em dez a quinze minutos de leitura ou áudio.</p>
+          <div class="entregavel-footer">
+            <span class="entregavel-valor">R$197</span>
+          </div>
+        </article>
+
+        <article class="entregavel-card">
+          <span class="entregavel-numero">02</span>
+          <h3 class="entregavel-nome">Protocolo de Manhã Offline</h3>
+          <p class="entregavel-descricao">O roteiro exato para recuperar os primeiros quarenta minutos do dia e devolver esse tempo à oração e à Bíblia, antes de qualquer notificação.</p>
+          <div class="entregavel-footer">
+            <span class="entregavel-valor">R$67</span>
+          </div>
+        </article>
+
+        <article class="entregavel-card">
+          <span class="entregavel-numero">03</span>
+          <h3 class="entregavel-nome">Sistema de Mapeamento de Gatilhos</h3>
+          <p class="entregavel-descricao">A ferramenta que revela, com nome e horário, os pontos exatos em que a sua mão pega o celular sozinha.</p>
+          <div class="entregavel-footer">
+            <span class="entregavel-valor">R$47</span>
+          </div>
+        </article>
+
+        <article class="entregavel-card">
+          <span class="entregavel-numero">04</span>
+          <h3 class="entregavel-nome">Roteiro do Dia do Deserto</h3>
+          <p class="entregavel-descricao">O plano completo para as suas primeiras doze horas offline sem ansiedade, com o que fazer em cada bloco do dia.</p>
+          <div class="entregavel-footer">
+            <span class="entregavel-valor">R$47</span>
+          </div>
+        </article>
+
+        <article class="entregavel-card">
+          <span class="entregavel-numero">05</span>
+          <h3 class="entregavel-nome">Modelo do Pacto Permanente</h3>
+          <p class="entregavel-descricao">O documento escrito que transforma catorze dias de esforço em uma identidade que continua depois do desafio.</p>
+          <div class="entregavel-footer">
+            <span class="entregavel-valor">R$37</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="entregaveis-nota" role="note">
+        <p class="entregaveis-nota-titulo">Entrega offline-first</p>
+        <p class="entregaveis-nota-texto">O produto <strong>não vive dentro da rede social que te prende.</strong> Foi construído para não alimentar o problema que resolve.</p>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-bonus">
+<section class="bonus-section" aria-labelledby="bonus-heading">
+    <div class="bonus-inner">
+
+      <header class="bonus-header">
+        <p class="bonus-eyebrow">Incluído na sua compra</p>
+        <h2 class="bonus-headline" id="bonus-heading">
+          Três apoios extras para a travessia<br>não parar na sua casa.
+        </h2>
+        <div class="bonus-divider" aria-hidden="true"></div>
+      </header>
+
+      <div class="bonus-grid" role="list">
+
+        <!-- Bonus 1 -->
+        <article class="bonus-card" role="listitem" aria-label="Bônus 1: Kit Mesa Sem Tela">
+          <span class="bonus-seal">Bônus 1</span>
+          <h3 class="bonus-card-title">Kit Mesa Sem Tela</h3>
+          <hr class="bonus-card-rule" aria-hidden="true">
+          <p class="bonus-card-desc">
+            Um combinado simples para a família, com dinâmica de jantar e um acordo de mesa que faz todo mundo largar o celular ao mesmo tempo, sem virar briga.
+          </p>
+          <div class="bonus-value-block">
+            <p class="bonus-value-label">Valor individual</p>
+            <p class="bonus-value" aria-label="Valor: R$ 57">R$57</p>
+            <p class="bonus-included"><strong>Incluso</strong> no seu acesso</p>
+          </div>
+        </article>
+
+        <!-- Bonus 2 -->
+        <article class="bonus-card" role="listitem" aria-label="Bônus 2: 14 Áudios Devocionais da Travessia">
+          <span class="bonus-seal">Bônus 2</span>
+          <h3 class="bonus-card-title">14 Áudios Devocionais<br>da Travessia</h3>
+          <hr class="bonus-card-rule" aria-hidden="true">
+          <p class="bonus-card-desc">
+            Um devocional curto para cada dia, feito para ser ouvido offline, ligando a fase daquele dia a um texto bíblico do arco do Êxodo.
+          </p>
+          <div class="bonus-value-block">
+            <p class="bonus-value-label">Valor individual</p>
+            <p class="bonus-value" aria-label="Valor: R$ 67">R$67</p>
+            <p class="bonus-included"><strong>Incluso</strong> no seu acesso</p>
+          </div>
+        </article>
+
+        <!-- Bonus 3 -->
+        <article class="bonus-card" role="listitem" aria-label="Bônus 3: Cartão do Plano de Recaída">
+          <span class="bonus-seal">Bônus 3</span>
+          <h3 class="bonus-card-title">Cartão do Plano<br>de Recaída</h3>
+          <hr class="bonus-card-rule" aria-hidden="true">
+          <p class="bonus-card-desc">
+            Um cartão imprimível "se isso, então aquilo" para deixar à vista, que responde aos três momentos em que quase todo mundo recai.
+          </p>
+          <div class="bonus-value-block">
+            <p class="bonus-value-label">Valor individual</p>
+            <p class="bonus-value" aria-label="Valor: R$ 37">R$37</p>
+            <p class="bonus-included"><strong>Incluso</strong> no seu acesso</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="secao-stack">
+<section class="stack-section" aria-label="Stack de valor da oferta">
+
+    <h2 class="stack-headline">Some tudo o que entra,<br>e depois olhe o preço.</h2>
+
+    <div class="stack-card" role="region" aria-label="Composição completa da oferta">
+
+      <ul class="stack-items" aria-label="Itens incluídos na oferta">
+        <li class="stack-item">
+          <span class="stack-item-name">Guia diário do Método da Travessia (14 dias)</span>
+          <span class="stack-item-value">R$197</span>
+        </li>
+        <li class="stack-item">
+          <span class="stack-item-name">Protocolo de Manhã Offline</span>
+          <span class="stack-item-value">R$67</span>
+        </li>
+        <li class="stack-item">
+          <span class="stack-item-name">Sistema de Mapeamento de Gatilhos</span>
+          <span class="stack-item-value">R$47</span>
+        </li>
+        <li class="stack-item">
+          <span class="stack-item-name">Roteiro do Dia do Deserto</span>
+          <span class="stack-item-value">R$47</span>
+        </li>
+        <li class="stack-item">
+          <span class="stack-item-name">Modelo do Pacto Permanente</span>
+          <span class="stack-item-value">R$37</span>
+        </li>
+        <li class="stack-item">
+          <span class="stack-item-name">
+            <span class="stack-bonus-label" aria-hidden="true">Bônus</span>Kit Mesa Sem Tela
+          </span>
+          <span class="stack-item-value">R$57</span>
+        </li>
+        <li class="stack-item">
+          <span class="stack-item-name">
+            <span class="stack-bonus-label" aria-hidden="true">Bônus</span>14 Áudios Devocionais da Travessia
+          </span>
+          <span class="stack-item-value">R$67</span>
+        </li>
+        <li class="stack-item">
+          <span class="stack-item-name">
+            <span class="stack-bonus-label" aria-hidden="true">Bônus</span>Cartão do Plano de Recaída
+          </span>
+          <span class="stack-item-value">R$37</span>
+        </li>
+      </ul>
+
+      <div class="stack-total-row" aria-label="Valor total da oferta">
+        <span class="stack-total-label">Valor total</span>
+        <span class="stack-total-value" aria-label="R$556 riscado">R$556</span>
+      </div>
+
+      <div class="stack-price-block">
+        <p class="stack-price-label">Você entra na travessia por</p>
+        <p class="stack-price-main" aria-label="R$197">R$197</p>
+      </div>
+
+      <div class="stack-divider" role="separator"></div>
+
+      <p class="stack-installment">
+        Ou em até 12x no cartão. Menos de R$17 por dia ao longo dos catorze dias,
+        o preço de um delivery de almoço, para recuperar duas horas de vida por dia.
+      </p>
+
+      <a href="#checkout" class="stack-cta-btn" role="button">
+        Quero atravessar por R$197
+      </a>
+
+    </div>
+
+  </section>
+</div>
+
+<div class="secao-prova2">
+<section class="prova2-section" aria-labelledby="prova2-titulo">
+    <div class="prova2-inner">
+
+      <header class="prova2-header">
+        <h2 class="prova2-headline" id="prova2-titulo">
+          Eles não ganharam mais força de vontade.<br>
+          Ganharam um caminho.
+        </h2>
+        <div class="prova2-divider" aria-hidden="true"></div>
+      </header>
+
+      <div class="prova2-cards">
+
+        <!-- Depoimento 1: Paulo -->
+        <article class="prova2-card">
+          <span class="prova2-quote-mark" aria-hidden="true">&#8220;</span>
+          <p class="prova2-text">
+            Eu era o cara que respondia cliente em tempo real e usava isso para justificar
+            <span class="stat">seis horas</span> de celular por dia. No segundo dia, o mapeamento me mostrou
+            que dos <span class="stat">210 minutos</span> que eu passava no aparelho antes do almoço,
+            só <span class="stat">35</span> eram de trabalho de verdade. Criei
+            <span class="stat">quatro janelas</span> fixas de WhatsApp e caí para
+            <span class="stat">1h50</span> no total. Um cliente até elogiou que minhas respostas ficaram mais diretas.
+          </p>
+          <hr class="prova2-rule" aria-hidden="true">
+          <div class="prova2-author">
+            <div class="prova2-avatar" aria-label="Foto de Paulo">[foto]</div>
+            <div>
+              <span class="prova2-name">Paulo</span>
+              <span class="prova2-role">41 anos, corretor de imóveis, Fortaleza</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Depoimento 2: Thiago -->
+        <article class="prova2-card">
+          <span class="prova2-quote-mark" aria-hidden="true">&#8220;</span>
+          <p class="prova2-text">
+            Entrei no meio de um projeto com prazo apertado, achando que era o pior momento
+            possível. O mapeamento revelou que eu perdia <span class="stat">1h40</span> toda manhã
+            no celular antes de começar a trabalhar. Troquei esse bloco pelo protocolo offline
+            e entreguei o projeto <span class="stat">dois dias</span> antes do prazo.
+            O desafio não tirou meu tempo, devolveu.
+          </p>
+          <hr class="prova2-rule" aria-hidden="true">
+          <div class="prova2-author">
+            <div class="prova2-avatar" aria-label="Foto de Thiago">[foto]</div>
+            <div>
+              <span class="prova2-name">Thiago</span>
+              <span class="prova2-role">33 anos, analista de sistemas, Belo Horizonte</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Depoimento 3: Claudia -->
+        <article class="prova2-card">
+          <span class="prova2-quote-mark" aria-hidden="true">&#8220;</span>
+          <p class="prova2-text">
+            Fiquei duas semanas achando que <span class="stat">R$197</span> era caro. No dia em que
+            somei o tempo de tela do mês e vi <span class="stat">164 horas</span>, entrei.
+            Recuperei pelo menos <span class="stat">50 horas</span> de presença com meus filhos
+            e na oração em <span class="stat">catorze dias</span>. A pergunta que ficou foi
+            por que eu demorei tanto.
+          </p>
+          <hr class="prova2-rule" aria-hidden="true">
+          <div class="prova2-author">
+            <div class="prova2-avatar" aria-label="Foto de Claudia">[foto]</div>
+            <div>
+              <span class="prova2-name">Cláudia</span>
+              <span class="prova2-role">44 anos, contadora, Porto Alegre</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="secao-suporte">
+<section class="suporte-section" aria-label="Suporte durante a travessia">
+    <div class="suporte-inner">
+
+      <!-- Emblema SVG de conversa direta: dois balões com anel dourado -->
+      <svg class="suporte-emblem" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Anel externo -->
+        <circle cx="44" cy="44" r="41" stroke="#c9a24b" stroke-width="1"/>
+        <!-- Anel interno tracejado -->
+        <circle cx="44" cy="44" r="35" stroke="#c9a24b" stroke-width="0.6" stroke-dasharray="2 5"/>
+        <!-- Balão de quem pergunta -->
+        <rect x="20" y="26" width="36" height="21" rx="6" stroke="#c9a24b" stroke-width="1.2"/>
+        <path d="M26 47 L26 54 L34 47" stroke="#c9a24b" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+        <!-- Balão de quem responde -->
+        <rect x="33" y="44" width="35" height="20" rx="6" fill="#211334" stroke="#c9a24b" stroke-width="1.5"/>
+        <path d="M62 64 L62 71 L54 64" fill="#211334" stroke="#c9a24b" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+
+      <h2 class="suporte-headline">Você não atravessa sozinho.</h2>
+      <div class="suporte-accent-line" role="presentation"></div>
+      <p class="suporte-body">
+        O que faz a recuperação funcionar há mais de oitenta anos não é esforço solitário, é apoio e prestação de contas. Por isso a travessia não te entrega um PDF e some. Durante os catorze dias você fala comigo direto no WhatsApp, manda a dúvida, relata o dia e conta a recaída se ela vier, com resposta em até vinte e quatro horas em dias úteis. <em>Nos dias mais difíceis, entre o quinto e o sétimo, quando a ansiedade da redução aperta,</em> ter alguém do outro lado sabendo o que você está passando é o que separa quem recai de quem atravessa.
+      </p>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-garantia">
+<section class="garantia-section">
+    <div class="garantia-inner">
+      <div class="garantia-card">
+
+        <div class="garantia-seal-wrapper" role="img" aria-label="Garantia de 7 dias, 100% do seu dinheiro de volta">
+          <div class="garantia-seal-shimmer"></div>
+          <div class="garantia-seal">
+            <span class="garantia-seal-label">Garantia</span>
+            <span class="garantia-seal-days">7</span>
+            <span class="garantia-seal-unit">Dias</span>
+            <span class="garantia-seal-sub">100% do seu dinheiro de volta</span>
+          </div>
+        </div>
+
+        <div class="garantia-content">
+          <div class="garantia-divider"></div>
+          <h2 class="garantia-headline">O risco é todo meu, não seu.</h2>
+          <div class="garantia-body">
+            <p>Faça os primeiros sete dias da travessia. Meça o seu tempo de tela, mapeie os seus gatilhos, comece a redesenhar o seu ambiente.</p>
+            <p>Se ao fim desses sete dias você olhar para trás e sentir que não mudou nada, que não valeu, é só pedir. <span class="garantia-emphasis">Devolvo cada centavo dos R$197, sem pergunta e sem constrangimento.</span></p>
+            <p>Você arrisca sete dias de atenção. Eu arrisco o preço inteiro. Se alguém aqui está apostando alto, sou eu.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="secao-autoridade">
+<section class="autoridade-secao" aria-label="Autoridade do criador">
+    <div class="autoridade-container">
+      <div class="autoridade-grid">
+
+        <!-- FOTO -->
+        <div class="autoridade-foto-wrapper">
+          <div
+            class="autoridade-foto-placeholder"
+            role="img"
+            aria-label="Foto de Ewertton Bravo"
+          >
+            <span class="autoridade-foto-label">[Foto do Ewertton]</span>
+          </div>
+        </div>
+
+        <!-- CONTEUDO -->
+        <div class="autoridade-conteudo">
+
+          <!-- EPIGRAFE -->
+          <div class="autoridade-epigrafe">
+            <span class="autoridade-aspa" aria-hidden="true">&ldquo;</span>
+            <p class="autoridade-headline">Quem fala com você já esteve preso na mesma corrente.</p>
+          </div>
+
+          <!-- NOME -->
+          <div class="autoridade-nome-bloco">
+            <h2 class="autoridade-nome">Ewertton Bravo</h2>
+            <span class="autoridade-separador" role="presentation"></span>
+          </div>
+
+          <!-- PARAGRAFOS -->
+          <div class="autoridade-texto">
+            <p class="autoridade-paragrafo">
+              Eu não construí isso lendo sobre vício num escritório. Construí porque eu vivi a cena
+              que você vive: acordar e pegar o celular antes de falar com Deus, prometer a mim mesmo
+              toda semana que ia mudar, e recair no mesmo dia. Eu conhecia os versículos. Sabia de cor
+              que somos escravos daquilo que nos domina. E mesmo assim a tela me vencia todo dia, e
+              cada recaída me deixava com mais vergonha e menos autoestima espiritual.
+            </p>
+            <p class="autoridade-paragrafo">
+              A virada não veio de mais força de vontade nem de mais uma pregação que me deixava
+              convicto no domingo e recaído na quarta. Veio quando parei de tratar aquilo como falta
+              de disciplina e comecei a tratar como o que é, uma escravidão que se rompe com um
+              caminho, um passo de cada vez, do jeito que o mundo já sabe romper vício há mais de
+              oitenta anos, e do jeito que Deus tirou um povo inteiro do Egito. Foi disso que nasceu
+              o <span class="autoridade-kw">Método da Travessia</span>: o mapa que eu mesmo precisei
+              percorrer para sair, com a <span class="autoridade-kw">Bíblia</span> numa mão e a
+              prática na outra.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="secao-faq">
+<section class="faq-section" aria-labelledby="faq-titulo">
+    <div class="faq-container">
+
+      <span class="faq-eyebrow" aria-hidden="true"></span>
+
+      <h2 class="faq-headline" id="faq-titulo">
+        As perguntas que passam na sua cabeça antes de decidir.
+      </h2>
+
+      <ul class="faq-list" role="list">
+
+        <li class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-resposta-1">
+            <span class="faq-question">Já tentei parar e recaí. Por que dessa vez seria diferente?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" stroke="#c9a24b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer-wrap" id="faq-resposta-1" role="region" aria-labelledby="faq-titulo">
+            <p class="faq-answer">Porque as tentativas anteriores dependiam só da sua força de vontade, e força de vontade acaba no fim de um dia difícil. A travessia mede antes de proibir, mapeia os seus gatilhos e redesenha o seu ambiente, que trabalha por você vinte e quatro horas. A recaída de antes não é prova de que você não consegue. É prova de que você precisava de estrutura, não de mais vontade.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-resposta-2">
+            <span class="faq-question">Isso vai ser só uma lista de dicas óbvias que eu já conheço?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" stroke="#c9a24b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer-wrap" id="faq-resposta-2" role="region" aria-labelledby="faq-titulo">
+            <p class="faq-answer">Não. A travessia começa com uma medição do seu tempo real de tela e com o mapa dos seus gatilhos específicos, com nome e horário. Dica solta muda o que você sabe. Estrutura de recuperação muda o que você faz.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-resposta-3">
+            <span class="faq-question">R$197 não é caro para catorze dias?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" stroke="#c9a24b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer-wrap" id="faq-resposta-3" role="region" aria-labelledby="faq-titulo">
+            <p class="faq-answer">São menos de R$17 por dia, o preço de um almoço por aplicativo. Provavelmente você gasta mais que isso por mês em assinaturas que assiste pela mesma tela que quer dominar. A conta muda quando você coloca na mesa o que a tela toma de você por mês.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-resposta-4">
+            <span class="faq-question">Preciso do celular para trabalho e para a família. Não dá para largar.</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" stroke="#c9a24b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer-wrap" id="faq-resposta-4" role="region" aria-labelledby="faq-titulo">
+            <p class="faq-answer">A travessia não pede para largar o celular em nenhum dos catorze dias. Ela separa o uso funcional, que fica, do uso compulsivo, que sai. Ao final você continua usando o celular, só que no comando.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-resposta-5">
+            <span class="faq-question">Não tenho tempo nem foco para um desafio agora.</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" stroke="#c9a24b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer-wrap" id="faq-resposta-5" role="region" aria-labelledby="faq-titulo">
+            <p class="faq-answer">O conteúdo de cada dia cabe em dez a quinze minutos. E a falta de tempo e foco que você sente é justamente o sintoma que a travessia trata. Você não vai adicionar mais uma tarefa ao dia, vai retirar a que consome o tempo que você diz não ter.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-resposta-6">
+            <span class="faq-question">É evangélico? Vai me julgar?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" stroke="#c9a24b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer-wrap" id="faq-resposta-6" role="region" aria-labelledby="faq-titulo">
+            <p class="faq-answer">O fundamento é bíblico, o arco é o do Êxodo, e a linguagem é de irmão, não de juiz. Ninguém vai adicionar culpa. A escravidão é nomeada para ser rompida, não para ser carregada.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-resposta-7">
+            <span class="faq-question">Como recebo o material?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" stroke="#c9a24b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer-wrap" id="faq-resposta-7" role="region" aria-labelledby="faq-titulo">
+            <p class="faq-answer">O material do dia é liberado no app de desafios, um dia por vez, em texto e em áudio, pensado para ser consumido offline. O devocional daquele dia chega separado no seu WhatsApp.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+</div>
+
+<div class="secao-oferta">
+<section class="oferta-final" aria-label="Oferta final">
+    <div class="oferta-inner">
+
+      <div class="oferta-divider" aria-hidden="true"></div>
+
+      <h2 class="oferta-headline">
+        Daqui a catorze dias você vai estar<br>
+        num de dois lugares.<br>
+        Escolha agora qual.
+      </h2>
+
+      <div class="oferta-corpo">
+        <p>Você pode fechar esta página e continuar exatamente onde está. Nada muda por não decidir, e esse é o problema, porque continuar igual já custa duas horas da sua vida por dia, custa a oração fragmentada, custa o filho que aprende que a tela é mais interessante que ele. A conta de não fazer nada não vem no fim do mês. Vem todo dia, em silêncio.</p>
+
+        <p class="paragrafo-travessia">Ou você atravessa. Em catorze dias você vê a escravidão, atravessa o deserto e firma a terra prometida, com o ambiente redesenhado, o Pacto Permanente assinado e a tela de volta ao seu lugar, debaixo de você, e não por cima.</p>
+      </div>
+
+      <div class="oferta-preco-box" role="region" aria-label="Detalhes da oferta">
+        <p class="preco-label">Valor total da travessia</p>
+        <p class="preco-riscado">R$556</p>
+        <p class="preco-principal">R$197</p>
+        <p class="preco-parcelado">ou em até 12x no cartão</p>
+        <p class="preco-garantia">Os sete primeiros dias correm por minha conta.<br>Se não valer, devolvo tudo.</p>
+      </div>
+
+      <div class="oferta-cta-wrap">
+        <a href="#checkout" class="oferta-cta" role="button">
+          Quero atravessar. Começar agora por R$197
+        </a>
+      </div>
+
+      <p class="oferta-legal">
+        Ao continuar, você concorda com os termos de uso e a política de privacidade. Pagamento único, com garantia de sete dias.
+      </p>
+
+    </div>
+  </section>
+</div>
+
+<script>
+    (function () {
+      var triggers = document.querySelectorAll('.faq-trigger');
+
+      triggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+          var item = trigger.closest('.faq-item');
+          var answerId = trigger.getAttribute('aria-controls');
+          var answerWrap = document.getElementById(answerId);
+          var estaAberto = item.classList.contains('is-open');
+
+          // Fechar todos os itens abertos
+          document.querySelectorAll('.faq-item.is-open').forEach(function (itemAberto) {
+            var triggerAberto = itemAberto.querySelector('.faq-trigger');
+            var idResposta = triggerAberto.getAttribute('aria-controls');
+            var wrapAberto = document.getElementById(idResposta);
+            itemAberto.classList.remove('is-open');
+            triggerAberto.setAttribute('aria-expanded', 'false');
+            wrapAberto.style.maxHeight = '0';
+          });
+
+          // Abrir o item clicado se estava fechado
+          if (!estaAberto) {
+            item.classList.add('is-open');
+            trigger.setAttribute('aria-expanded', 'true');
+            answerWrap.style.maxHeight = answerWrap.scrollHeight + 'px';
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
