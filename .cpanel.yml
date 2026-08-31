@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH="$HOME/ebravoholding.com/pages/vida-alem-da-tela/"
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R index.html $DEPLOYPATH
     - /bin/mkdir -p $DEPLOYPATH/assets
-    - /bin/cp assets/* $DEPLOYPATH/assets/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R assets/. $DEPLOYPATH/assets/
+    - /bin/rm -f $DEPLOYPATH/assets/banner-1.jpg $DEPLOYPATH/assets/banner-2.jpg $DEPLOYPATH/assets/logo-square.jpg
