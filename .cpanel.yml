@@ -6,4 +6,4 @@ deployment:
     - 'export DEPLOYPATH="$([ -d "$HOME/ebravoholdingo.shop" ] && echo "$HOME/ebravoholdingo.shop" || echo "$HOME/public_html/ebravoholdingo.shop")/vida-alem-da-tela/"'
     - /bin/mkdir -p $DEPLOYPATH/assets
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R assets/. $DEPLOYPATH/assets/
+    - /bin/cp assets/* $DEPLOYPATH/assets/
