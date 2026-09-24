@@ -1,8 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH="$HOME/ebravoholding.com/pages/vida-alem-da-tela/"
+    # O docroot varia conforme a versao do cPanel: $HOME/<dominio> (padrao atual) ou
+    # $HOME/public_html/<dominio> (addon domain legado). Usa o que existir.
+    - 'export DEPLOYPATH="$([ -d "$HOME/ebravoholdingo.shop" ] && echo "$HOME/ebravoholdingo.shop" || echo "$HOME/public_html/ebravoholdingo.shop")/vida-alem-da-tela/"'
     - /bin/mkdir -p $DEPLOYPATH/assets
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R assets/. $DEPLOYPATH/assets/
-    - /bin/rm -f $DEPLOYPATH/assets/banner-1.jpg $DEPLOYPATH/assets/banner-2.jpg $DEPLOYPATH/assets/logo-square.jpg

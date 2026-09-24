@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vida Além da Tela · Desafio de 14 dias para se libertar do celular</title>
 <meta name="description" content="O celular não venceu você por falta de fé nem de disciplina. O Método da Travessia é um caminho de 14 dias, um passo de cada vez, com acompanhamento direto no WhatsApp. R$197 com 7 dias de garantia.">
-<link rel="canonical" href="https://ebravoholding.com/pages/vida-alem-da-tela/">
+<link rel="canonical" href="https://ebravoholdingo.shop/vida-alem-da-tela/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Ewertton Bravo">
 <meta name="theme-color" content="#140a20">
@@ -15,15 +15,15 @@
 <meta property="og:site_name" content="Ewertton Bravo">
 <meta property="og:title" content="Vida Além da Tela · Desafio de 14 dias para se libertar do celular">
 <meta property="og:description" content="O celular não venceu você por falta de fé nem de disciplina. O Método da Travessia é um caminho de 14 dias, um passo de cada vez, com acompanhamento direto no WhatsApp.">
-<meta property="og:url" content="https://ebravoholding.com/pages/vida-alem-da-tela/">
-<meta property="og:image" content="https://ebravoholding.com/pages/vida-alem-da-tela/assets/og-image.jpg">
+<meta property="og:url" content="https://ebravoholdingo.shop/vida-alem-da-tela/">
+<meta property="og:image" content="https://ebravoholdingo.shop/vida-alem-da-tela/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Vida Além da Tela. Você já prometeu a Deus que ia largar o celular de manhã e pegou de novo antes de orar hoje.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Vida Além da Tela · Desafio de 14 dias para se libertar do celular">
 <meta name="twitter:description" content="O celular não venceu você por falta de fé nem de disciplina. O Método da Travessia é um caminho de 14 dias, um passo de cada vez.">
-<meta name="twitter:image" content="https://ebravoholding.com/pages/vida-alem-da-tela/assets/og-image.jpg">
+<meta name="twitter:image" content="https://ebravoholdingo.shop/vida-alem-da-tela/assets/og-image.jpg">
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
@@ -33,6 +33,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Meta Pixel: adiado para depois do LCP via requestIdleCallback -->
+<script>
+  (function () {
+    function loadPixel() {
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        }; if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1757831658852242');
+      fbq('track', 'PageView');
+      fbq('track', 'ViewContent', { value: 197.00, currency: 'BRL' });
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadPixel, { timeout: 3000 });
+    } else {
+      window.addEventListener('load', loadPixel);
+    }
+  })();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1757831658852242&ev=PageView&noscript=1" alt="" /></noscript>
 
 <style>
 /* Reset minimo pra wrappers nao colidirem com margens do body */
@@ -2859,6 +2885,45 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     </div>
   </section>
 </div>
+
+<!-- ORIGEM DAS VENDAS (UTM + sck) — Daniela Tiemi / Fluxo Copia e Cola © 2024. Reescreve hrefs no load; injeta sck nos links Hotmart/Kiwify. -->
+<script>
+  var currentUrl = window.location.href;
+  var url = new URL(currentUrl);
+  var pagePath = url.pathname.replace(/^\/|\/$/g, '');
+  var cleanReferrer = document.referrer ? document.referrer.replace(/^https?:\/\//, '') : '';
+  var utmSource = url.searchParams.get('utm_source') || cleanReferrer || 'Direto';
+  var utmMedium = url.searchParams.get('utm_medium') || 'Organico';
+  var utmCampaign = url.searchParams.get('utm_campaign') || 'Direto';
+  var utmContent = url.searchParams.get('utm_content') || pagePath || 'Home';
+  var utmTerm = url.searchParams.get('utm_term') || '';
+  var links = document.querySelectorAll('a');
+  for (var i = 0; i < links.length; i++) {
+    if (!links[i].hasAttribute('popup')) {
+      var destinationUrl = links[i].href;
+      if (!destinationUrl.includes('#')) {
+        var hasUtmParams = destinationUrl.includes('utm_source') ||
+          destinationUrl.includes('utm_medium') ||
+          destinationUrl.includes('utm_campaign') ||
+          destinationUrl.includes('utm_content') ||
+          destinationUrl.includes('utm_term');
+        if (!hasUtmParams) {
+          destinationUrl += (destinationUrl.indexOf('?') === -1 ? '?' : '&');
+          destinationUrl += 'utm_source=' + utmSource;
+          destinationUrl += '&utm_medium=' + utmMedium;
+          destinationUrl += '&utm_campaign=' + utmCampaign;
+          destinationUrl += '&utm_content=' + utmContent;
+          destinationUrl += '&utm_term=' + utmTerm;
+          if (destinationUrl.includes('pay.hotmart') || destinationUrl.includes('pay.kiwify')) {
+            var sckValue = utmSource + '-' + utmMedium + '-' + utmCampaign + '-' + utmContent + '-' + utmTerm;
+            destinationUrl += '&sck=' + sckValue;
+          }
+          links[i].href = destinationUrl;
+        }
+      }
+    }
+  }
+</script>
 
 <script>
     (function () {
