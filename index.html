@@ -16,14 +16,14 @@
 <meta property="og:title" content="Vida Além da Tela · Desafio de 14 dias para se libertar do celular">
 <meta property="og:description" content="O celular não venceu você por falta de fé nem de disciplina. O Método da Travessia é um caminho de 14 dias, um passo de cada vez, com acompanhamento direto no WhatsApp.">
 <meta property="og:url" content="https://ebravoholdingo.shop/vida-alem-da-tela/">
-<meta property="og:image" content="https://ebravoholdingo.shop/vida-alem-da-tela/assets/og-image.jpg">
+<meta property="og:image" content="https://ebravoholdingo.shop/vida-alem-da-tela/assets/og-image-v2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Vida Além da Tela. Você já prometeu a Deus que ia largar o celular de manhã e pegou de novo antes de orar hoje.">
+<meta property="og:image:alt" content="Vida Além da Tela. Você já prometeu a si mesmo que ia largar o celular de manhã e pegou de novo antes de dormir hoje.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Vida Além da Tela · Desafio de 14 dias para se libertar do celular">
 <meta name="twitter:description" content="O celular não venceu você por falta de fé nem de disciplina. O Método da Travessia é um caminho de 14 dias, um passo de cada vez.">
-<meta name="twitter:image" content="https://ebravoholdingo.shop/vida-alem-da-tela/assets/og-image.jpg">
+<meta name="twitter:image" content="https://ebravoholdingo.shop/vida-alem-da-tela/assets/og-image-v2.jpg">
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
@@ -76,6 +76,8 @@
   /* brilho radial do hero e da oferta */
   --violet:#6b3fa0;
   /* forma */
+  /* marca-texto: topo transparente para o grifo não cobrir descendentes (g, j, p, q, y, ç) da linha de cima */
+  --hl-top:.18em;
   --radius:16px; --radius-btn:999px;
   --shadow-hard:0 6px 0 var(--ink-dark);
   --shadow-btn:0 6px 0 var(--gold-deep);
@@ -130,15 +132,16 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 .secao-hero .hero__headline{
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(2.1rem, 7vw, 3.6rem);
-  line-height: 1.08;
+  /* Celular: escala com a largura (8.4vw) para "hoje." não ficar sozinho na última linha entre 360 e 767px. */
+  font-size: clamp(1.8rem, 8.4vw, 3.2rem);
+  line-height: 1.12;
   letter-spacing: -0.02em;
   color: var(--ink);
   margin-bottom: 24px;
   text-wrap: balance;
 }
 .secao-hero .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -243,13 +246,14 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 }
 @media (min-width: 768px){
   .secao-hero .hero{
-    padding: 48px 40px 104px;
+    padding: 40px 40px 104px;
   }
   .secao-hero .hero__eyebrow{
     margin-bottom: 24px;
   }
   .secao-hero .hero__headline{
-    margin-bottom: 28px;
+    font-size: clamp(2.05rem, 7vw, 3.6rem);
+    margin-bottom: 22px;
   }
   .secao-hero .hero__subheadline{
     font-size: 1.1875rem;
@@ -321,7 +325,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-dor .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -438,7 +442,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   display: block;
 }
 .secao-paliativo .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -578,7 +582,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-prova1 .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -722,7 +726,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-cta .hl{
-  background: var(--ink-dark);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--ink-dark) var(--hl-top) 100%);
   color: var(--gold-vivid);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -832,7 +836,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-metodo .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -1043,7 +1047,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-paraquem .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -1198,7 +1202,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-entregaveis .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -1406,7 +1410,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-bonus .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -1561,7 +1565,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-stack .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -1801,7 +1805,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-prova2 .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -1959,7 +1963,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-suporte .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -2173,7 +2177,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 }
 .secao-garantia .hl{
   white-space: nowrap;
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -2292,7 +2296,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-autoridade .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -2404,7 +2408,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-wrap: balance;
 }
 .secao-faq .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -2548,14 +2552,14 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   font-family: var(--font-display);
   font-weight: 900;
   font-size: clamp(2rem, 6.5vw, 3.25rem);
-  line-height: 1.1;
+  line-height: 1.12;
   letter-spacing: -0.02em;
   color: var(--ink);
   margin-bottom: 32px;
   text-wrap: balance;
 }
 .secao-oferta .hl{
-  background: var(--gold-vivid);
+  background: linear-gradient(to bottom, transparent 0 var(--hl-top), var(--gold-vivid) var(--hl-top) 100%);
   color: var(--ink-dark);
   padding: 0 .12em;
   -webkit-box-decoration-break: clone;
@@ -2813,8 +2817,8 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       </div>
 
       <h1 class="hero__headline">
-        Você já prometeu a Deus que ia largar o celular de manhã<br>
-        e <mark class="hl">pegou de novo antes de orar hoje</mark>.
+        Você já prometeu a si mesmo que ia largar o celular de manhã<br>
+        e <mark class="hl">pegou de novo antes de dormir hoje</mark>.
       </h1>
 
       <div class="hero__divider" aria-hidden="true"></div>
