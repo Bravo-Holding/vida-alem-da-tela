@@ -2018,6 +2018,56 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   }
 }
 
+/* Prints reais de alunos (outro desafio, mesmo acompanhamento): cartões claros com sombra dura dourada. */
+.secao-suporte .suporte-provas{
+  margin-top: 40px;
+}
+.secao-suporte .suporte-provas-legenda{
+  font: 600 13px/1.4 var(--font-body);
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+}
+.secao-suporte .suporte-provas-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.secao-suporte .suporte-print{
+  background: var(--paper);
+  border: 2px solid var(--ink-dark);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 6px 6px 0 var(--gold-vivid);
+  transform: rotate(-1.2deg);
+}
+.secao-suporte .suporte-print:nth-child(2){ transform: rotate(1deg); }
+.secao-suporte .suporte-print:nth-child(3){ transform: rotate(-0.8deg); }
+.secao-suporte .suporte-print img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px){
+  .secao-suporte .suporte-provas{
+    grid-column: 1 / -1;
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1024px){
+  .secao-suporte .suporte-provas-grid{
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    max-width: none;
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  .secao-suporte .suporte-print,
+  .secao-suporte .suporte-print:nth-child(2),
+  .secao-suporte .suporte-print:nth-child(3){ transform: none; }
+}
+
 /* === secao-garantia (garantia-gerada-vida-alem-da-tela.html) · reestilo bold === */
 .secao-garantia *, .secao-garantia *::before, .secao-garantia *::after{
   box-sizing: border-box;
@@ -3453,6 +3503,21 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       <p class="suporte-body">
         O que faz recuperação funcionar há mais de oitenta anos não é esforço solitário, é apoio e prestação de contas. Por isso a travessia não te entrega um PDF e some. Durante os catorze dias você fala comigo direto no WhatsApp, manda a dúvida, relata o dia e conta a recaída se ela vier, com resposta em até vinte e quatro horas em dias úteis. <em>Nos dias mais difíceis, entre o quinto e o sétimo, quando a ansiedade da redução aperta,</em> ter alguém do outro lado sabendo o que você está passando é o que separa quem recai de quem atravessa.
       </p>
+
+      <div class="suporte-provas">
+        <p class="suporte-provas-legenda">Alunos do Desafio Talento Enterrado, com o mesmo acompanhamento diário</p>
+        <div class="suporte-provas-grid">
+          <figure class="suporte-print">
+            <img src="assets/depo-fabiane.webp" width="675" height="453" loading="lazy" decoding="async" alt="Print de WhatsApp de Fabiane Roldão: Vou começar de novo! Sei que vai ser muito produtivo eu vou começar de novo o propósito! Muito obrigada. Muito obrigada de coração, Deus abençoe você sempre!">
+          </figure>
+          <figure class="suporte-print">
+            <img src="assets/depo-dia7.webp" width="675" height="380" loading="lazy" decoding="async" alt="Print de WhatsApp da prestação de contas do Dia 7: Nesta semana, o que mais mudou foi o sentimento de clareza que me acompanhou o tempo todo. Mesmo com as dificuldades que surgiram, não perdi o foco do que precisava ser feito de imediato e do que poderia ser adiado.">
+          </figure>
+          <figure class="suporte-print">
+            <img src="assets/depo-pedro.webp" width="675" height="447" loading="lazy" decoding="async" alt="Print de WhatsApp de Ribeiro Pedro: essa mentoria pode ser o ponto de virada. Eu recomendo porque vivi na prática. E daqui pra frente, é sem voltar pra procrastinação.">
+          </figure>
+        </div>
+      </div>
 
     </div>
   </section>
