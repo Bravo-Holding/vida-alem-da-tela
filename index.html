@@ -1652,6 +1652,22 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   text-align: center;
   padding: 28px 0 22px;
 }
+/* "Você não paga R$556.": linha discreta antes do preço, repetindo o riscado em --egito. */
+.secao-stack .stack-price-nao{
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink-dark-muted);
+  margin-bottom: 6px;
+}
+.secao-stack .stack-price-nao-valor{
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.1875rem;
+  color: var(--egito);
+  text-decoration: line-through;
+  text-decoration-color: var(--egito);
+  text-decoration-thickness: 3px;
+}
 .secao-stack .stack-price-label{
   font-size: 1rem;
   font-weight: 700;
@@ -2552,19 +2568,15 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   padding: 8px 20px 12px;
   margin-bottom: 18px;
 }
-.secao-oferta .preco-parcelado{
+.secao-oferta .preco-resumo{
   font-size: 1rem;
-  font-weight: 700;
-  color: var(--ink-dark);
-  margin-bottom: 18px;
-}
-.secao-oferta .preco-garantia{
-  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.55;
   color: var(--ink-dark-muted);
   border-top: 2px dashed color-mix(in srgb, var(--line-dark) 22%, transparent);
   padding-top: 16px;
+  max-width: 44ch;
+  margin: 0 auto;
 }
 .secao-oferta .oferta-cta-wrap{
   max-width: 520px;
@@ -2799,15 +2811,15 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 
         <p>No culto, o pastor prega e você está lá de corpo, mas a mente escapa para o bolso a cada cinco minutos. Em casa, o seu filho começa a te contar algo importante e você responde "uhum" sem tirar os olhos da tela, e ele aprende, calado, que o telefone é mais interessante que ele. À noite, você rola o feed por uma hora, larga o aparelho e não consegue lembrar de uma única coisa que viu. Só sobra a sensação de vazio e a promessa, mais uma vez, de que amanhã vai ser diferente.</p>
 
-        <p>Só que amanhã não é diferente. E não é porque você é fraco ou pouco espiritual. É porque cada aplicativo no seu telefone foi desenhado por times de engenheiros e psicólogos com um único objetivo: manter você rolando o máximo de tempo possível. Cada notificação, cada rolagem infinita, cada vídeo que já começa sozinho aciona no seu cérebro a mesma substância que prende um dependente químico. Você não está lutando contra um mau hábito. Está lutando contra uma máquina bilionária construída para te vencer.</p>
+        <p>Só que amanhã não é diferente. E não é porque você é fraco ou pouco espiritual. É porque cada aplicativo no seu telefone foi desenhado por times de engenheiros e psicólogos com um único objetivo, manter você rolando o máximo de tempo possível. Cada notificação, cada rolagem infinita, cada vídeo que já começa sozinho aciona no seu cérebro a mesma substância que prende um dependente químico. Você não está lutando contra um mau hábito. Está lutando contra uma máquina bilionária construída para te vencer.</p>
 
-        <p>A Bíblia já tinha dado o nome disso muito antes de existir smartphone.</p>
+        <p>E a Bíblia já tinha dado o nome disso muito antes de existir smartphone.</p>
 
         <blockquote class="dor-blockquote" aria-label="Citação bíblica">
           <p>De quem alguém é vencido, dele também se faz escravo.</p>
         </blockquote>
 
-        <p class="dor-fecho">A tela te venceu. E escravo ninguém liberta com força de vontade. Se liberta com um caminho de saída.</p>
+        <p class="dor-fecho">A tela te venceu. E escravo ninguém liberta com força de vontade, se liberta com um caminho de saída.</p>
 
       </div>
     </div>
@@ -2845,14 +2857,14 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
           <span class="paliativo-card-num" aria-label="Tentativa 03">03</span>
           <h3 class="paliativo-card-title">O desafio de vinte reais</h3>
           <div class="paliativo-card-rule" aria-hidden="true"></div>
-          <p class="paliativo-card-body">Você já comprou aquele desafio de detox de vinte reais, cheio de dicas óbvias: "deixe o celular em outro cômodo", "desative notificações". Dicas soltas, sem ninguém do seu lado, sem passo a passo, sem prestação de contas. No terceiro dia ninguém lembrava que você tinha começado, inclusive você.</p>
+          <p class="paliativo-card-body">Você já comprou aquele desafio de detox de vinte reais, cheio de dicas óbvias, "deixe o celular em outro cômodo", "desative notificações". Dicas soltas, sem ninguém do seu lado, sem passo a passo, sem prestação de contas. No terceiro dia ninguém lembrava que você tinha começado, inclusive você.</p>
         </article>
 
         <article class="paliativo-card" role="listitem">
           <span class="paliativo-card-num" aria-label="Tentativa 04">04</span>
           <h3 class="paliativo-card-title">As pregações sobre mordomia</h3>
           <div class="paliativo-card-rule" aria-hidden="true"></div>
-          <p class="paliativo-card-body">Você já ouviu boas pregações sobre mordomia do tempo, saiu do culto convicto, decidido, quebrantado. A convicção durou até o farol vermelho no caminho para casa, quando a mão pegou o celular sozinha. Convicção sem método é remorso que se repete todo domingo.</p>
+          <p class="paliativo-card-body">E você já ouviu boas pregações sobre mordomia do tempo, saiu do culto convicto, decidido, quebrantado. A convicção durou até o farol vermelho no caminho para casa, quando a mão pegou o celular sozinha. Convicção sem método é remorso que se repete todo domingo.</p>
         </article>
 
       </div>
@@ -2943,15 +2955,9 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 <section class="sec-metodo" aria-labelledby="metodo-headline-id">
     <div class="sec-metodo__inner">
 
-      <!-- Eyebrow com dashes laterais -->
-      <div class="sec-metodo__eyebrow-row">
-        <div class="sec-metodo__eyebrow-dash" aria-hidden="true"></div>
-        <p class="sec-metodo__eyebrow">Método da Travessia</p>
-        <div class="sec-metodo__eyebrow-dash" aria-hidden="true"></div>
-      </div>
-
       <!-- Headline principal -->
       <h2 class="sec-metodo__headline" id="metodo-headline-id">
+        O Método da Travessia.<br>
         O mesmo arco que Deus usou para tirar um povo da escravidão,
         aplicado ao que <mark class="hl">domina você hoje.</mark>
       </h2>
@@ -2975,7 +2981,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
               <span class="sec-metodo__card-dias">Dias 1 a 4</span>
               <div class="sec-metodo__card-sep"></div>
               <p class="sec-metodo__card-texto">
-                Você não proíbe nada ainda. Mede o tempo real que a tela toma, mapeia os gatilhos que fazem a sua mão pegar o aparelho sozinha, faz o inventário das perdas e declara a decisão para uma pessoa de confiança. O simples ato de medir um comportamento já o reduz, é a base da terapia cognitivo-comportamental. A mudança começa com menos resistência.
+                Na primeira fase, do Dia 1 ao Dia 4, você vê a escravidão. Não proíbe nada ainda. Você mede o tempo real que a tela toma, que quase sempre é maior do que você imagina, mapeia os gatilhos que fazem a sua mão pegar o aparelho sozinha, faz o inventário das perdas e declara a decisão para uma pessoa de confiança. Existe uma razão para começar medindo, e não proibindo. O simples ato de medir um comportamento já o reduz, é a base da terapia cognitivo-comportamental. A mudança começa com menos resistência, porque ninguém está te obrigando a largar nada. Você só está enxergando de olhos abertos, pela primeira vez, o tamanho da corrente.
               </p>
             </div>
           </article>
@@ -2995,7 +3001,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
               <span class="sec-metodo__card-dias">Dias 5 a 10</span>
               <div class="sec-metodo__card-sep"></div>
               <p class="sec-metodo__card-texto">
-                Força de vontade é um recurso que acaba no fim de um dia difícil, bem na hora em que o gatilho aparece. Por isso a travessia redesenha o ambiente ao seu redor, cria atrito onde a tela era fácil e zonas sagradas onde ela não entra, até o Dia do Deserto: doze horas totalmente offline. O ambiente passa a trabalhar por você vinte e quatro horas por dia.
+                Na segunda fase, do Dia 5 ao Dia 10, você atravessa o deserto. Aqui está o segredo que separa quem muda de quem recai. Força de vontade é um recurso que acaba, ela some no fim de um dia difícil, bem na hora em que o gatilho aparece. Por isso a travessia não aposta na sua vontade. Ela redesenha o ambiente ao seu redor, cria atrito onde a tela era fácil e cria zonas sagradas onde ela não entra, até chegar ao Dia do Deserto, doze horas totalmente offline planejadas com antecedência. O ambiente passa a trabalhar por você vinte e quatro horas por dia, mesmo quando a sua vontade não está disponível.
               </p>
             </div>
           </article>
@@ -3015,7 +3021,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
               <span class="sec-metodo__card-dias">Dias 11 a 14</span>
               <div class="sec-metodo__card-sep"></div>
               <p class="sec-metodo__card-texto">
-                Você volta a usar o celular com regras escritas, no comando. Monta o plano de recaída "se isso, então aquilo", assume a nova identidade de quem domina a tela e sela o Pacto Permanente. A formação de um hábito leva em média sessenta e seis dias, por isso a travessia termina num pacto que continua rodando depois do desafio.
+                Na terceira fase, do Dia 11 ao Dia 14, você firma a terra prometida. Não se trata de nunca mais tocar no celular. Trata-se de voltar a usá-lo com regras escritas, de mão, no comando. Você monta o seu plano de recaída no formato "se isso acontecer, então eu faço aquilo", assume a nova identidade de quem domina a tela em vez de ser dominado por ela, e sela o Pacto Permanente. A formação de um hábito leva em média sessenta e seis dias. Por isso a travessia não termina numa linha de chegada, termina num pacto que continua rodando depois que o desafio acaba.
               </p>
             </div>
           </article>
@@ -3170,7 +3176,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
         <article class="entregavel-card">
           <span class="entregavel-numero">03</span>
           <h3 class="entregavel-nome">Sistema de Mapeamento de Gatilhos</h3>
-          <p class="entregavel-descricao">A ferramenta que revela, com nome e horário, os pontos exatos em que a sua mão pega o celular sozinha.</p>
+          <p class="entregavel-descricao">A ferramenta que revela, com nome e horário, os pontos exatos em que a sua mão pega o celular sozinha, para atacar a raiz e não o sintoma.</p>
           <div class="entregavel-footer">
             <span class="entregavel-valor">R$47</span>
           </div>
@@ -3198,7 +3204,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 
       <div class="entregaveis-nota" role="note">
         <p class="entregaveis-nota-titulo">Entrega offline-first</p>
-        <p class="entregaveis-nota-texto">O produto <strong>não vive dentro da rede social que te prende.</strong> Foi construído para não alimentar o problema que resolve.</p>
+        <p class="entregaveis-nota-texto">O produto <strong>não vive dentro da rede social que te prende.</strong> Ele foi construído para não alimentar o problema que resolve.</p>
       </div>
 
     </div>
@@ -3225,7 +3231,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
           <h3 class="bonus-card-title">Kit Mesa Sem Tela</h3>
           <hr class="bonus-card-rule" aria-hidden="true">
           <p class="bonus-card-desc">
-            Um combinado simples para a família, com dinâmica de jantar e um acordo de mesa que faz todo mundo largar o celular ao mesmo tempo, sem virar briga.
+            Um combinado simples para a família, com dinâmica de jantar e um acordo de mesa que faz todo mundo largar o celular ao mesmo tempo, sem virar briga. Para o pai ou a mãe que quer os filhos de volta na conversa.
           </p>
           <div class="bonus-value-block">
             <p class="bonus-value-label">Valor individual</p>
@@ -3255,7 +3261,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
           <h3 class="bonus-card-title">Cartão do Plano<br>de Recaída</h3>
           <hr class="bonus-card-rule" aria-hidden="true">
           <p class="bonus-card-desc">
-            Um cartão imprimível "se isso, então aquilo" para deixar à vista, que responde aos três momentos em que quase todo mundo recai.
+            Um cartão imprimível "se isso, então aquilo" para deixar à vista, que responde antecipadamente aos três momentos em que quase todo mundo recai.
           </p>
           <div class="bonus-value-block">
             <p class="bonus-value-label">Valor individual</p>
@@ -3323,6 +3329,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       </div>
 
       <div class="stack-price-block">
+        <p class="stack-price-nao">Você não paga <span class="stack-price-nao-valor">R$556</span>.</p>
         <p class="stack-price-label">Você entra na travessia por</p>
         <p class="stack-price-main" aria-label="R$197">R$197</p>
       </div>
@@ -3444,7 +3451,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       <h2 class="suporte-headline">Você <mark class="hl">não atravessa sozinho.</mark></h2>
       <div class="suporte-accent-line" role="presentation"></div>
       <p class="suporte-body">
-        O que faz a recuperação funcionar há mais de oitenta anos não é esforço solitário, é apoio e prestação de contas. Por isso a travessia não te entrega um PDF e some. Durante os catorze dias você fala comigo direto no WhatsApp, manda a dúvida, relata o dia e conta a recaída se ela vier, com resposta em até vinte e quatro horas em dias úteis. <em>Nos dias mais difíceis, entre o quinto e o sétimo, quando a ansiedade da redução aperta,</em> ter alguém do outro lado sabendo o que você está passando é o que separa quem recai de quem atravessa.
+        O que faz recuperação funcionar há mais de oitenta anos não é esforço solitário, é apoio e prestação de contas. Por isso a travessia não te entrega um PDF e some. Durante os catorze dias você fala comigo direto no WhatsApp, manda a dúvida, relata o dia e conta a recaída se ela vier, com resposta em até vinte e quatro horas em dias úteis. <em>Nos dias mais difíceis, entre o quinto e o sétimo, quando a ansiedade da redução aperta,</em> ter alguém do outro lado sabendo o que você está passando é o que separa quem recai de quem atravessa.
       </p>
 
     </div>
@@ -3517,21 +3524,10 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
           <!-- PARAGRAFOS -->
           <div class="autoridade-texto">
             <p class="autoridade-paragrafo">
-              Eu não construí isso lendo sobre vício num escritório. Construí porque eu vivi a cena
-              que você vive: acordar e pegar o celular antes de falar com Deus, prometer a mim mesmo
-              toda semana que ia mudar, e recair no mesmo dia. Eu conhecia os versículos. Sabia de cor
-              que somos escravos daquilo que nos domina. E mesmo assim a tela me vencia todo dia, e
-              cada recaída me deixava com mais vergonha e menos autoestima espiritual.
+              Meu nome é Ewertton Bravo. Eu não construí isso lendo sobre vício num escritório. Construí porque eu vivi a cena que você vive: acordar e pegar o celular antes de falar com Deus, prometer a mim mesmo toda semana que ia mudar, e recair no mesmo dia. Eu conhecia os versículos. Sabia de cor que somos escravos daquilo que nos domina. E mesmo assim a tela me vencia todo dia, e cada recaída me deixava com mais vergonha e menos autoestima espiritual.
             </p>
             <p class="autoridade-paragrafo">
-              A virada não veio de mais força de vontade nem de mais uma pregação que me deixava
-              convicto no domingo e recaído na quarta. Veio quando parei de tratar aquilo como falta
-              de disciplina e comecei a tratar como o que é, uma escravidão que se rompe com um
-              caminho, um passo de cada vez, do jeito que o mundo já sabe romper vício há mais de
-              oitenta anos, e do jeito que Deus tirou um povo inteiro do Egito. Foi disso que nasceu
-              o <span class="autoridade-kw">Método da Travessia</span>: o mapa que eu mesmo precisei
-              percorrer para sair, com a <span class="autoridade-kw">Bíblia</span> numa mão e a
-              prática na outra.
+              A virada não veio de mais força de vontade nem de mais uma pregação que me deixava convicto no domingo e recaído na quarta. Veio quando parei de tratar aquilo como falta de disciplina e comecei a tratar como o que é, uma escravidão que se rompe com um caminho, um passo de cada vez, do jeito que o mundo já sabe romper vício há mais de oitenta anos, e do jeito que Deus tirou um povo inteiro do Egito. Foi disso que nasceu o <span class="autoridade-kw">Método da Travessia</span>. Não é teoria de coach. É o mapa que eu mesmo precisei para sair, com a <span class="autoridade-kw">Bíblia</span> numa mão e a prática na outra.
             </p>
           </div>
 
@@ -3561,7 +3557,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
             </svg>
           </button>
           <div class="faq-answer-wrap" id="faq-resposta-1" role="region" aria-labelledby="faq-titulo">
-            <p class="faq-answer">Porque as tentativas anteriores dependiam só da sua força de vontade, e força de vontade acaba no fim de um dia difícil. A travessia mede antes de proibir, mapeia os seus gatilhos e redesenha o seu ambiente, que trabalha por você vinte e quatro horas. A recaída de antes não é prova de que você não consegue. É prova de que você precisava de estrutura, não de mais vontade.</p>
+            <p class="faq-answer">Porque as tentativas anteriores dependiam só da sua força de vontade, e força de vontade acaba no fim de um dia difícil. A travessia não aposta nisso. Ela mede antes de proibir, mapeia os seus gatilhos e redesenha o seu ambiente, que trabalha por você vinte e quatro horas. A recaída de antes não é prova de que você não consegue. É prova de que você precisava de estrutura, não de mais vontade.</p>
           </div>
         </li>
 
@@ -3573,7 +3569,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
             </svg>
           </button>
           <div class="faq-answer-wrap" id="faq-resposta-2" role="region" aria-labelledby="faq-titulo">
-            <p class="faq-answer">Não. A travessia começa com uma medição do seu tempo real de tela e com o mapa dos seus gatilhos específicos, com nome e horário. Dica solta muda o que você sabe. Estrutura de recuperação muda o que você faz.</p>
+            <p class="faq-answer">Não. A travessia não começa com dica, começa com uma medição do seu tempo real de tela e com o mapa dos seus gatilhos específicos, com nome e horário. Dica solta muda o que você sabe. Estrutura de recuperação muda o que você faz.</p>
           </div>
         </li>
 
@@ -3585,7 +3581,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
             </svg>
           </button>
           <div class="faq-answer-wrap" id="faq-resposta-3" role="region" aria-labelledby="faq-titulo">
-            <p class="faq-answer">São menos de R$17 por dia, o preço de um almoço por aplicativo. Provavelmente você gasta mais que isso por mês em assinaturas que assiste pela mesma tela que quer dominar. A conta muda quando você coloca na mesa o que a tela toma de você por mês.</p>
+            <p class="faq-answer">São menos de R$17 por dia, o preço de um almoço por aplicativo. Provavelmente você gasta mais que isso por mês em assinaturas que assiste pela mesma tela que quer dominar. A conta muda quando você coloca na mesa o que a tela toma de você por mês, e não só o número de dias do calendário.</p>
           </div>
         </li>
 
@@ -3597,7 +3593,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
             </svg>
           </button>
           <div class="faq-answer-wrap" id="faq-resposta-4" role="region" aria-labelledby="faq-titulo">
-            <p class="faq-answer">A travessia não pede para largar o celular em nenhum dos catorze dias. Ela separa o uso funcional, que fica, do uso compulsivo, que sai. Ao final você continua usando o celular, só que no comando.</p>
+            <p class="faq-answer">A travessia não pede para largar o celular em nenhum dos catorze dias. Ela separa o uso funcional, que fica, do uso compulsivo, que sai. Ao final você continua usando o celular para trabalho e família, só que no comando, e não sendo comandado.</p>
           </div>
         </li>
 
@@ -3609,7 +3605,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
             </svg>
           </button>
           <div class="faq-answer-wrap" id="faq-resposta-5" role="region" aria-labelledby="faq-titulo">
-            <p class="faq-answer">O conteúdo de cada dia cabe em dez a quinze minutos. E a falta de tempo e foco que você sente é justamente o sintoma que a travessia trata. Você não vai adicionar mais uma tarefa ao dia, vai retirar a que consome o tempo que você diz não ter.</p>
+            <p class="faq-answer">O conteúdo de cada dia cabe em dez a quinze minutos. E a falta de tempo e foco que você sente é justamente o sintoma que a travessia trata. Você não vai adicionar mais uma tarefa ao dia. Vai retirar a tarefa que está consumindo o tempo que você diz não ter.</p>
           </div>
         </li>
 
@@ -3633,7 +3629,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
             </svg>
           </button>
           <div class="faq-answer-wrap" id="faq-resposta-7" role="region" aria-labelledby="faq-titulo">
-            <p class="faq-answer">O material do dia é liberado no app de desafios, um dia por vez, em texto e em áudio, pensado para ser consumido offline. O devocional daquele dia chega separado no seu WhatsApp.</p>
+            <p class="faq-answer">Tudo é entregue no app de desafios, um dia liberado por vez, em texto e áudio. E já no Dia Zero você pode baixar o PDF completo, para fazer a travessia inteira sem precisar abrir o celular. O produto não vive dentro da rede social que te prende.</p>
           </div>
         </li>
 
@@ -3664,8 +3660,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
         <p class="preco-label">Valor total da travessia</p>
         <p class="preco-riscado">R$556</p>
         <p class="preco-principal">R$197</p>
-        <p class="preco-parcelado">ou em até 12x no cartão</p>
-        <p class="preco-garantia">Os sete primeiros dias correm por minha conta.<br>Se não valer, devolvo tudo.</p>
+        <p class="preco-resumo">Tudo o que entra na travessia soma R$556. Você entra por R$197, ou em até 12x no cartão. Os sete primeiros dias correm por minha conta, se não valer, devolvo tudo.</p>
       </div>
 
       <div class="oferta-cta-wrap">
