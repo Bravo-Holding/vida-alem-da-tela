@@ -7,4 +7,5 @@ deployment:
     - /bin/mkdir -p $DEPLOYPATH/assets
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp assets/* $DEPLOYPATH/assets/
-    - /bin/cp .htaccess $DEPLOYPATH
+    # Apaga o .htaccess de Brotli que subiu em 6aae30d (servidor sem mod_brotli, ficou inerte).
+    - /bin/rm -f $DEPLOYPATH/.htaccess

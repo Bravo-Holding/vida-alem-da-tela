@@ -1,7 +1,0 @@
-# Compressao Brotli do HTML, so nesta pasta. Sem mod_brotli no servidor, este bloco e ignorado
-# e segue o gzip padrao. Sem diretivas Rewrite aqui, para herdar o HTTPS forcado da raiz.
-<IfModule mod_brotli.c>
-  <IfModule mod_filter.c>
-    AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript image/svg+xml
-  </IfModule>
-</IfModule>
