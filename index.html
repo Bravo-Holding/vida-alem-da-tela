@@ -66,6 +66,16 @@
   src:url(assets/inter-latin-v20.woff2) format('woff2');
   unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* Fontes reserva com largura ajustada às finais: o texto ocupa o mesmo espaço antes e depois da troca (sem salto de layout).
+   Valores medidos no hero em 360/390/412px. Se o local() não existir no aparelho, a face é ignorada e vale o fallback seguinte. */
+@font-face{ font-family:'Fraunces FB Georgia'; font-weight:700 900; size-adjust:96.5%; src:local('Georgia Bold'), local('Georgia-Bold'); }
+@font-face{ font-family:'Fraunces FB Georgia'; font-weight:400 600; src:local('Georgia'); }
+@font-face{ font-family:'Fraunces FB Noto'; font-weight:700 900; size-adjust:98.5%; src:local('Noto Serif Bold'), local('NotoSerif-Bold'); }
+@font-face{ font-family:'Fraunces FB Noto'; font-weight:400 600; src:local('Noto Serif'), local('NotoSerif-Regular'); }
+@font-face{ font-family:'Inter FB Roboto'; font-weight:400 500; size-adjust:106.7%; src:local('Roboto'), local('Roboto Regular'), local('Roboto-Regular'); }
+@font-face{ font-family:'Inter FB Roboto'; font-weight:600 800; size-adjust:108.5%; src:local('Roboto Bold'), local('Roboto-Bold'); }
+@font-face{ font-family:'Inter FB Arial'; font-weight:400 500; size-adjust:105.5%; src:local('Helvetica Neue'), local('HelveticaNeue'), local('Arial'), local('ArialMT'); }
+@font-face{ font-family:'Inter FB Arial'; font-weight:600 800; size-adjust:102%; src:local('Helvetica Neue Bold'), local('HelveticaNeue-Bold'), local('Arial Bold'), local('Arial-BoldMT'); }
 :root{
   /* escuro */
   --bg:#140a20; --bg-deep:#0d0616; --surface:#211334; --surface-alt:#2c1a43;
@@ -87,7 +97,7 @@
   --shadow-hard:0 6px 0 var(--ink-dark);
   --shadow-btn:0 6px 0 var(--gold-deep);
   --shadow-btn-dark:0 6px 0 rgba(0,0,0,.35); --shadow-btn-dark-hover:0 4px 0 rgba(0,0,0,.35);
-  --font-display:'Fraunces', Georgia, serif; --font-body:'Inter', system-ui, sans-serif;
+  --font-display:'Fraunces', 'Fraunces FB Georgia', 'Fraunces FB Noto', Georgia, serif; --font-body:'Inter', 'Inter FB Roboto', 'Inter FB Arial', system-ui, sans-serif;
 }
 /* Reset minimo pra wrappers nao colidirem com margens do body */
 html, body { margin: 0; padding: 0; overflow-x: hidden; }

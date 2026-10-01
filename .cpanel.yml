@@ -7,3 +7,4 @@ deployment:
     - /bin/mkdir -p $DEPLOYPATH/assets
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp assets/* $DEPLOYPATH/assets/
+    - /bin/cp .htaccess $DEPLOYPATH
